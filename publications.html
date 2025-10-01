@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Teja Erukude - Publications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="about.html">About</a></li> -->
+                <li><a href="publications.html" class="active">Publications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Quick metrics -->
+        <div class="metrics-card">
+            <h3>Publication Metrics</h3>
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="metric-number">10+</span>
+                    <p class="metric-label">Publications</p>
+                    <span class="metric-sublabel">Journals & Conferences</span>
+                </div>
+                <div class="metric-item">
+                    <a href="https://scholar.google.com/citations?hl=en&user=j9Iggx8AAAAJ" target="_blank"
+                        style="text-decoration: none; color: inherit;">
+                        <span class="metric-number">6+</span>
+                        <p class="metric-label">Citations</p>
+                        <span class="metric-sublabel">Google Scholar →</span>
+                    </a>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">5+</span>
+                    <p class="metric-label">Peer Reviews</p>
+                    <span class="metric-sublabel">Applied Soft Computing</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="publication-filters">
+            <button class="filter-btn active" onclick="filterPublications('all')">All</button>
+            <button class="filter-btn" onclick="filterPublications('journal')">Journal Articles</button>
+            <button class="filter-btn" onclick="filterPublications('conference')">Conference Papers</button>
+            <button class="filter-btn" onclick="filterPublications('thesis')">Thesis</button>
+        </div>
+
+
+        <div class="publications-grid">
+
+
+            <div class="publication" data-category="journal">
+                <div class="publication-header">
+                    <div style="flex: 1;">
+                        <h3>Galaxy Image Simplification Using Generative AI</h3>
+                    </div>
+                    <span class="publication-year">2025</span>
+                </div>
+                <p class="publication-meta">Astronomy and Computing, 100990</p>
+                <div class="publication-tags">
+                    <span class="tag">Generative AI</span>
+                    <span class="tag">Astronomy</span>
+                    <span class="tag">Galaxy Image Analysis</span>
+                </div>
+                <p>Modern digital sky surveys acquire images of billions of galaxies requiring effective automation.
+                    This paper introduces a novel approach using generative AI to simplify galaxy images.</p>
+                <div class="publication-footer">
+                    <a href="https://www.sciencedirect.com/science/article/pii/S2213133725000630" target="_blank"
+                        class="publication-link">
+                        <i class="fas fa-file"></i> View Paper
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="publication" data-category="journal">
+                <div class="publication-header">
+                    <div style="flex: 1;">
+                        <h3>The Evolution of Search Engines: From Keyword Matching to AI-Powered Understanding</h3>
+                    </div>
+                    <span class="publication-year">2025</span>
+                </div>
+                <p class="publication-meta">International Journal of Computer Applications (0975 - 8887)</p>
+                <div class="publication-tags">
+                    <span class="tag">AI-Powered Search Engines</span>
+                    <span class="tag">Information Retrieval</span>
+                    <span class="tag">LLMs</span>
+                </div>
+                <p>Search engines have undergone a dramatic transformation from simple keyword-based tools to
+                    intelligent, AI-powered systems. This paper explores their evolution, impact and key innovations
+                    like LLMs and semantic search.</p>
+                <div class="publication-footer">
+                    <a href="http://doi.org/10.5120/ijca2025925279" target="_blank" class="publication-link">
+                        <i class="fas fa-file-pdf"></i> View Paper
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="publication" data-category="journal">
+                <div class="publication-header">
+                    <div style="flex: 1;">
+                        <h3>Multimodal Deep Learning: A Survey of Models, Fusion Strategies, Applications, and Research
+                            Challenges</h3>
+                    </div>
+                    <span class="publication-year">2025</span>
+                </div>
+                <p class="publication-meta">International Journal of Computer Applications (0975 - 8887)</p>
+                <div class="publication-tags">
+                    <span class="tag">Cross-Modal Learning</span>
+                    <span class="tag">Fusion Strategies</span>
+                    <span class="tag">Multimodal Architectures</span>
+                </div>
+                <p>Multimodal DL is enabling models to process and reason across diverse data types like text, images,
+                    audio, and video. This survey explores foundational methods, state-of-the-art
+                    architectures, and real-world applications.
+                </p>
+                <div class="publication-footer">
+                    <a href="http://doi.org/10.5120/ijca2025925264" target="_blank" class="publication-link">
+                        <i class="fas fa-file-pdf"></i> View Paper
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="publication" data-category="journal">
+                <div class="publication-header">
+                    <div style="flex: 1;">
+                        <h3>Towards a New Era of Sustainable Agriculture: AI Applications and Case Studies in Crop
+                            Management</h3>
+                    </div>
+                    <span class="publication-year">2025</span>
+                </div>
+                <p class="publication-meta">International Journal of Computer Applications (0975 - 8887)</p>
+                <div class="publication-tags">
+                    <span class="tag">Precision Agriculture</span>
+                    <span class="tag">Crop Yield Prediction</span>
+                    <span class="tag">Sustainable Farming</span>
+                </div>
+                <p>AI is driving a digital transformation in agriculture, enabling smarter, more sustainable crop
+                    management practices. This review highlights key AI applications across yield prediction, precision
+                    farming, pest control, and irrigation, supported by real-world case studies and deployment insights.
+                </p>
+                <div class="publication-footer">
+                    <a href="http://doi.org/10.5120/ijca2025925294" target="_blank" class="publication-link">
+                        <i class="fas fa-file-pdf"></i> View Paper
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="publication" data-category="journal">
+                <div class="publication-header">
+                    <div style="flex: 1;">
+                        <h3>Transforming Medicine With Intelligence: How AI Is Reshaping the Role of Doctors and the
+                            Future of Clinical Practice</h3>
+                    </div>
+                    <span class="publication-year">2025</span>
+                </div>
+                <p class="publication-meta">Indian Journal of Computer Science and Engineering (IJCSE)</p>
+                <div class="publication-tags">
+                    <span class="tag">Federated Learning</span>
+                    <span class="tag">Medical Imaging</span>
+                    <span class="tag">Ethical AI in Medicine</span>
+                </div>
+                <p>AI is reshaping clinical practice by enhancing diagnosis, treatment, and care. This review highlights
+                    recent advances (2022-2025) and emphasizes human-AI collaboration in healthcare.
+                </p>
+                <div class="publication-footer">
+                    <a href="http://doi.org/10.21817/indjcse/2025/v16i1/251603013" target="_blank"
+                        class="publication-link">
+                        <i class="fas fa-file"></i> View Paper
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="publication" data-category="journal">
+                <div class="publication-header">
+                    <div style="flex: 1;">
+                        <h3>Agentic AI-The Rise of Autonomous Intelligent Agents in the Era of LLMs</h3>
+                    </div>
+                    <span class="publication-year">2025</span>
+                </div>
+                <p class="publication-meta">Indian Journal of Computer Science and Engineering (IJCSE)</p>
+                <div class="publication-tags">
+                    <span class="tag">Autonomous Agents</span>
+                    <span class="tag">Multi-Components in AI</span>
+                    <span class="tag">Cognitive Functions</span>
+                </div>
+                <p>Agentic AI enables systems to autonomously pursue goals using LLMs for reasoning.
+                    This survey covers its foundations, architectures, key frameworks, applications, challenges, and
+                    future prospects.
+                </p>
+                <div class="publication-footer">
+                    <a href="http://doi.org/10.21817/indjcse/2025/v16i1/251602024" target="_blank"
+                        class="publication-link">
+                        <i class="fas fa-file"></i> View Paper
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="publication" data-category="journal">
+                <div class="publication-header">
+                    <div style="flex: 1;">
+                        <h3>The Impact of Artificial Intelligence on Traditional Art Forms: A Disruption or Enhancement?
+                        </h3>
+                    </div>
+                    <span class="publication-year">2025</span>
+                </div>
+                <p class="publication-meta">Indian Journal of Computer Science and Engineering (IJCSE)</p>
+                <div class="publication-tags">
+                    <span class="tag">AI in Traditional Art</span>
+                    <span class="tag">Ethical Concerns</span>
+                    <span class="tag">Socio-Economic Impact</span>
+                </div>
+                <p>AI is reshaping clinical practice by enhancing diagnosis, treatment, and care. This review highlights
+                    recent advances (2022-2025) and emphasizes human-AI collaboration in healthcare.
+                </p>
+                <div class="publication-footer">
+                    <a href="https://doi.org/10.21817/indjcse/2025/v16i1/251603012" target="_blank"
+                        class="publication-link">
+                        <i class="fas fa-file-pdf"></i> View Paper
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="publication" data-category="journal">
+                <div class="publication-header">
+                    <div style="flex: 1;">
+                        <h3>Data-Centric AI: A Systematic Review of Methods, Challenges, and Future Directions
+                        </h3>
+                    </div>
+                    <span class="publication-year">2025</span>
+                </div>
+                <p class="publication-meta">Multidisciplinary International Journal of Research and Development (MIJRD)
+                </p>
+                <div class="publication-tags">
+                    <span class="tag">Data-Centric AI</span>
+                    <span class="tag">Automation in AI Pipelines</span>
+                </div>
+                <p>As model architecture improvements plateau, data-centric AI (DCAI) shifts focus to enhancing datasets
+                    for better performance. This paper reviews recent advances in DCAI methods, applications,
+                    challenges, and future directions toward more reliable and fair AI systems.
+
+                </p>
+                <div class="publication-footer">
+                    <a href="https://www.mijrd.com/papers/data-centric-ai-systematic-review-methods-challenges-future-directions"
+                        target="_blank" class="publication-link">
+                        <i class="fas fa-file"></i> View Paper
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="publication" data-category="journal">
+                <div class="publication-header">
+                    <div style="flex: 1;">
+                        <h3>Explainable Identification of Similarities Between Entities for Discovery in Large Text</h3>
+                    </div>
+                    <span class="publication-year">2025</span>
+                </div>
+                <p class="publication-meta">Future Internet, MDPI</p>
+                <div class="publication-tags">
+                    <span class="tag">Explainable AI</span>
+                    <span class="tag">Text Analysis & Similarity</span>
+                    <span class="tag">NLP</span>
+                </div>
+                <p>This research addresses limitations in existing AI tools by developing an n-gram analysis framework
+                    that provides precise and explainable insights into textual similarities.</p>
+                <div class="publication-footer">
+                    <a href="https://doi.org/10.3390/fi17040135" target="_blank" class="publication-link">
+                        <i class="fas fa-file"></i> View Paper
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="publication" data-category="journal">
+                <div class="publication-header">
+                    <div style="flex: 1;">
+                        <h3>Identifying Bias in Deep Neural Networks Using Image Transforms</h3>
+                    </div>
+                    <span class="publication-year">2024</span>
+                </div>
+                <p class="publication-meta">Computers, MDPI</p>
+                <div class="publication-tags">
+                    <span class="tag">Deep Learning</span>
+                    <span class="tag">Bias Detection</span>
+                    <span class="tag">Computer Vision</span>
+                </div>
+                <p>CNNs often work as "black boxes" leading to hidden biases. This paper proposes techniques for
+                    identifying dataset biases using image transforms including Fourier and wavelet
+                    transforms.</p>
+                <div class="publication-footer">
+                    <a href="https://doi.org/10.3390/computers13120341" target="_blank" class="publication-link">
+                        <i class="fas fa-file"></i> View Paper
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="publication" data-category="thesis">
+                <div class="publication-header">
+                    <div style="flex: 1;">
+                        <h3>Identifying bias in CNN image classification using image scrambling and transforms</h3>
+                    </div>
+                    <span class="publication-year">2024</span>
+                </div>
+                <p class="publication-meta">Master's Thesis, Kansas State University</p>
+                <div class="publication-tags">
+                    <span class="tag">Deep Learning</span>
+                    <span class="tag">Bias Detection</span>
+                    <span class="tag">Computer Vision</span>
+                </div>
+                <p>CNNs achieve high accuracy in vision tasks but often rely on hidden, biased background features. This
+                    thesis proposes two methods to detect and separate contextual information from noise, improving
+                    interpretability across various datasets.</p>
+                <div class="publication-footer">
+                    <a href="https://doi.org/10.13140/RG.2.2.29582.27209" target="_blank" class="publication-link">
+                        <i class="fas fa-file"></i> View Paper
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sai Teja Erukude. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function filterPublications ( category ) {
+            const publications = document.querySelectorAll( '.publication' );
+            const buttons = document.querySelectorAll( '.filter-btn' );
+
+            buttons.forEach( btn => btn.classList.remove( 'active' ) );
+            event.target.classList.add( 'active' );
+
+            publications.forEach( pub => {
+                if ( category === 'all' || pub.dataset.category === category ) {
+                    pub.style.display = 'flex';
+                } else {
+                    pub.style.display = 'none';
+                }
+            } );
+        }
+    </script>
+</body>
+
+</html>
