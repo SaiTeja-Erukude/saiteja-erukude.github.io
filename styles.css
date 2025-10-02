@@ -143,6 +143,7 @@ nav {
     box-shadow: var(--shadow-md);
     position: sticky;
     top: 100px;
+    text-align: center;
 }
 
 .profile-photo {
@@ -549,7 +550,12 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .profile-photo {
+        width: 70%;
+    }
+
     .profile-sidebar {
+        padding: var(--spacing-md) var(--spacing-lg);
         position: relative;
         top: 0;
     }
@@ -559,7 +565,7 @@ footer {
     }
 
     .profile-main {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-md) var(--spacing-lg);
     }
 
     .nav-links {
