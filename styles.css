@@ -124,7 +124,7 @@ nav {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: var(--spacing-lg);
 }
@@ -297,7 +297,6 @@ nav {
 }
 
 .publication-link.disabled {
-    pointer-events: none;
     text-decoration: none;
     cursor: not-allowed;
     opacity: 0.5;
@@ -428,6 +427,14 @@ nav {
     font-weight: bold;
     white-space: nowrap;
     flex-shrink: 0;
+}
+
+.issue-year.disabled {
+    text-decoration: none;
+    opacity: 0.5;
+    background: var(--text-muted);
+    color: var(--bg-primary);
+    filter: grayscale(50%);
 }
 
 .publication h3 {
@@ -652,7 +659,6 @@ nav {
 }
 
 .certificate-link.disabled {
-    pointer-events: none;
     text-decoration: none;
     cursor: not-allowed;
     opacity: 0.5;
