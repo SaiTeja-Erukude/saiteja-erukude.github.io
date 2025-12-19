@@ -133,7 +133,8 @@ nav {
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: var(--spacing-xl);
-    align-items: start;
+    align-items: center;
+
 }
 
 .profile-sidebar {
@@ -213,6 +214,7 @@ nav {
     color: var(--text-muted);
     margin-bottom: var(--spacing-md);
     line-height: 1.5;
+    font-weight: 500;
 }
 
 .bio {
