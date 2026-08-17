@@ -1,0 +1,125 @@
+[
+  {
+    "cve": "CVE-2026-47117",
+    "title": "OpenMed unauthenticated remote code execution",
+    "severity": "Critical",
+    "cvss": "9.3 (CVSS 4.0) - 9.8 (CVSS 3.1)",
+    "published": "June 2, 2026",
+    "affected": "OpenMed versions before 1.5.2",
+    "affectedMetric": "< 1.5.2",
+    "fixed": "OpenMed 1.5.2",
+    "fixedMetric": "1.5.2",
+    "cwe": "CWE-94 - Code injection",
+    "downloads": {
+      "value": "14.5M",
+      "label": "All-time PyPI downloads",
+      "source": "Pepy",
+      "url": "https://pepy.tech/projects/openmed"
+    },
+    "facts": [
+      { "label": "Product", "value": "OpenMed (Python - PyPI)" },
+      { "label": "CVSS score", "value": "9.3 (CVSS 4.0) / 9.8 (CVSS 3.1)" },
+      { "label": "Vector", "value": "Network - Unauthenticated - No UI" },
+      { "label": "Affected / Fixed", "value": "OpenMed < 1.5.2 - Fixed in 1.5.2" },
+      { "label": "Weakness", "value": "CWE-94 - Code injection" },
+      { "label": "PyPI downloads", "value": "3.94M / month - 14.5M all-time" }
+    ],
+    "description": "A model-loading path could allow an unauthenticated attacker to trigger execution of attacker-controlled Python code in the OpenMed service process.",
+    "cveUrl": "https://www.cve.org/CVERecord?id=CVE-2026-47117",
+    "pocUrl": "https://github.com/SaiTeja-Erukude/CVE-2026-47117-openmed-rce",
+    "references": [
+      { "label": "NVD", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-47117" },
+      { "label": "CVE.org record", "url": "https://www.cve.org/CVERecord?id=CVE-2026-47117" },
+      { "label": "VulnCheck advisory", "url": "https://www.vulncheck.com/advisories/openmed-remote-code-execution-via-pii-model-loading" },
+      { "label": "GitHub advisory", "url": "https://github.com/advisories/GHSA-m3v4-v5gx-7wf5" },
+      { "label": "Fix pull request", "url": "https://github.com/maziyarpanahi/openmed/pull/59" },
+      { "label": "Patch commit", "url": "https://github.com/maziyarpanahi/openmed/commit/98724f65df98d7518b9006e6356740aa36c2f224" },
+      { "label": "Release notes v1.5.2", "url": "https://github.com/maziyarpanahi/openmed/releases/tag/v1.5.2" },
+      { "label": "Project repository", "url": "https://github.com/maziyarpanahi/openmed" },
+      { "label": "PyPI package", "url": "https://pypi.org/project/openmed/" },
+      { "label": "Download statistics", "url": "https://pepy.tech/projects/openmed" },
+      { "label": "PoC repository", "url": "https://github.com/SaiTeja-Erukude/CVE-2026-47117-openmed-rce" }
+    ]
+  },
+  {
+    "cve": "CVE-2026-47103",
+    "title": "Python StateMachine remote code execution via SCXML evaluation",
+    "severity": "Critical",
+    "cvss": "9.3 (CVSS 4.0) - 9.8 (CVSS 3.1)",
+    "published": "June 17, 2026",
+    "affected": "Python StateMachine 3.0.0 through 3.1.x",
+    "affectedMetric": "3.0.0-3.1.x",
+    "fixed": "Python StateMachine 3.2.0",
+    "fixedMetric": "3.2.0",
+    "cwe": "CWE-95 - Eval injection",
+    "downloads": {
+      "value": "17.6M",
+      "label": "All-time PyPI downloads",
+      "source": "Pepy",
+      "url": "https://pepy.tech/projects/python-statemachine"
+    },
+    "facts": [
+      { "label": "Product", "value": "Python StateMachine (Python - PyPI)" },
+      { "label": "CVSS score", "value": "9.3 (CVSS 4.0) / 9.8 (CVSS 3.1)" },
+      { "label": "Vector", "value": "Network - Unauthenticated - No UI" },
+      { "label": "Affected / Fixed", "value": "Python StateMachine 3.0.0-3.1.x - Fixed in 3.2.0" },
+      { "label": "Weakness", "value": "CWE-95 - Eval injection" },
+      { "label": "PyPI downloads", "value": "1.37M / month - 17.6M all-time" }
+    ],
+    "description": "Unsafe evaluation of attacker-controlled SCXML expressions could allow arbitrary Python code execution in applications that process untrusted SCXML content.",
+    "cveUrl": "https://www.cve.org/CVERecord?id=CVE-2026-47103",
+    "pocUrl": "https://github.com/SaiTeja-Erukude/CVE-2026-47103-python-statemachine-rce",
+    "references": [
+      { "label": "NVD", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-47103" },
+      { "label": "CVE.org record", "url": "https://www.cve.org/CVERecord?id=CVE-2026-47103" },
+      { "label": "VulnCheck advisory", "url": "https://www.vulncheck.com/advisories/python-statemachine-rce-via-scxml-eval-injection" },
+      { "label": "GitHub advisory", "url": "https://github.com/fgmacedo/python-statemachine/security/advisories/GHSA-v4jc-pm6r-3vj8" },
+      { "label": "GitHub Advisory Database", "url": "https://github.com/advisories/GHSA-v4jc-pm6r-3vj8" },
+      { "label": "Release notes v3.2.0", "url": "https://github.com/fgmacedo/python-statemachine/releases/tag/v3.2.0" },
+      { "label": "Project repository", "url": "https://github.com/fgmacedo/python-statemachine" },
+      { "label": "PyPI package", "url": "https://pypi.org/project/python-statemachine/" },
+      { "label": "Download statistics", "url": "https://pepy.tech/projects/python-statemachine" },
+      { "label": "PoC repository", "url": "https://github.com/SaiTeja-Erukude/CVE-2026-47103-python-statemachine-rce" }
+    ]
+  },
+  {
+    "cve": "CVE-2026-9147",
+    "title": "uproot code injection via TStreamerInfo metadata",
+    "severity": "High",
+    "cvss": "8.5 (CVSS 4.0) - 7.8 (CVSS 3.1)",
+    "published": "July 18, 2026",
+    "affected": "uproot 5.7.4 and earlier",
+    "affectedMetric": "<= 5.7.4",
+    "fixed": "uproot 5.7.5",
+    "fixedMetric": "5.7.5",
+    "cwe": "CWE-94 - Code injection",
+    "downloads": {
+      "value": "21.4M",
+      "label": "All-time PyPI downloads",
+      "source": "Pepy",
+      "url": "https://pepy.tech/projects/uproot"
+    },
+    "facts": [
+      { "label": "Product", "value": "uproot (Python - PyPI)" },
+      { "label": "CVSS score", "value": "8.5 (CVSS 4.0) / 7.8 (CVSS 3.1)" },
+      { "label": "Vector", "value": "Local file - No privileges - User opens crafted file" },
+      { "label": "Affected / Fixed", "value": "uproot <= 5.7.4 - Fixed in 5.7.5" },
+      { "label": "Weakness", "value": "CWE-94 - Code injection" },
+      { "label": "PyPI downloads", "value": "1.77M / month - 21.4M all-time" }
+    ],
+    "description": "Crafted ROOT-file metadata could be interpolated into dynamically generated Python source, enabling code execution when an affected application processes the file.",
+    "cveUrl": "https://www.cve.org/CVERecord?id=CVE-2026-9147",
+    "pocUrl": "https://github.com/SaiTeja-Erukude/CVE-2026-9147-uproot-rce",
+    "references": [
+      { "label": "NVD", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9147" },
+      { "label": "CVE.org record", "url": "https://www.cve.org/CVERecord?id=CVE-2026-9147" },
+      { "label": "VulnCheck advisory", "url": "https://www.vulncheck.com/advisories/uproot-and-before-code-injection-via-tstreamerinfo-metadata" },
+      { "label": "GitHub advisory", "url": "https://github.com/scikit-hep/uproot5/security/advisories/GHSA-6946-mq52-g438" },
+      { "label": "Patch commit", "url": "https://github.com/scikit-hep/uproot5/commit/c045c2824295d907d2e705f31110c742928e50e7" },
+      { "label": "Project repository", "url": "https://github.com/scikit-hep/uproot5" },
+      { "label": "PyPI package", "url": "https://pypi.org/project/uproot/" },
+      { "label": "Download statistics", "url": "https://pepy.tech/projects/uproot" },
+      { "label": "PoC repository", "url": "https://github.com/SaiTeja-Erukude/CVE-2026-9147-uproot-rce" }
+    ]
+  }
+]

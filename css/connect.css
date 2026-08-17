@@ -1,0 +1,214 @@
+.connect-content {
+    padding-top: 24px;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(320px, .82fr) minmax(0, 1.18fr);
+    gap: 12px;
+    align-items: stretch;
+}
+
+.contact-direct,
+.contact-directory {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--surface);
+    padding: clamp(22px, 3vw, 32px);
+    box-shadow: var(--shadow);
+}
+
+.contact-direct {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, var(--surface) 55%, var(--accent-soft));
+    isolation: isolate;
+}
+
+.contact-direct::after {
+    content: '';
+    position: absolute;
+    right: -80px;
+    bottom: -110px;
+    z-index: -1;
+    width: 240px;
+    height: 240px;
+    border: 1px solid rgba(8, 126, 148, .14);
+    border-radius: 50%;
+    box-shadow: 0 0 0 34px rgba(8, 126, 148, .035), 0 0 0 68px rgba(8, 126, 148, .025);
+}
+
+.contact-kicker {
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: .64rem;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.contact-direct h2,
+.contact-directory h2 {
+    margin-top: 7px;
+    color: var(--ink);
+    font-size: clamp(1.28rem, 2.2vw, 1.65rem);
+    font-weight: 600;
+    letter-spacing: -.035em;
+    line-height: 1.2;
+}
+
+.contact-intro {
+    max-width: 520px;
+    margin-top: 10px;
+    color: var(--text);
+    font-size: .92rem;
+    line-height: 1.62;
+}
+
+.contact-email {
+    display: flex;
+    width: 100%;
+    min-height: 64px;
+    align-items: center;
+    gap: 12px;
+    margin-top: 22px;
+    border: 1px solid var(--accent);
+    border-radius: 11px;
+    background: var(--accent);
+    color: #fff;
+    padding: 11px 13px;
+    text-decoration: none;
+    transition: background .2s, border-color .2s, transform .2s;
+}
+
+.contact-email:hover {
+    border-color: var(--ink);
+    background: var(--ink);
+    transform: translateY(-1px);
+}
+
+.contact-email-icon {
+    display: inline-flex;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .14);
+    font-size: .8rem;
+}
+
+.contact-email-copy {
+    display: grid;
+    min-width: 0;
+    gap: 1px;
+}
+
+.contact-email-copy small {
+    font-family: var(--mono);
+    font-size: .58rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+}
+
+.contact-email-copy strong {
+    overflow-wrap: anywhere;
+    font-size: .82rem;
+    font-weight: 500;
+}
+
+.contact-email-arrow {
+    margin-left: auto;
+    font-size: .72rem;
+}
+
+.contact-location {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: .64rem;
+}
+
+.contact-location i {
+    color: var(--accent);
+}
+
+.contact-directory-heading {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+}
+
+.contact-profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 16px;
+    list-style: none;
+}
+
+.contact-profile-grid a {
+    display: flex;
+    min-height: 58px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--bg);
+    color: var(--ink);
+    padding: 10px 11px;
+    font-size: .8rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color .2s, background .2s, color .2s, transform .2s;
+}
+
+.contact-profile-grid a:hover {
+    border-color: rgba(8, 126, 148, .42);
+    background: var(--accent-soft);
+    color: var(--accent);
+    transform: translateY(-1px);
+}
+
+.contact-profile-icon {
+    display: inline-flex;
+    width: 34px;
+    height: 34px;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: .76rem;
+}
+
+.contact-profile-arrow {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: .58rem;
+}
+
+@media (max-width: 860px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .connect-content {
+        padding-top: 18px;
+    }
+
+    .contact-direct,
+    .contact-directory {
+        padding: 20px;
+    }
+
+    .contact-profile-grid {
+        grid-template-columns: 1fr;
+    }
+}

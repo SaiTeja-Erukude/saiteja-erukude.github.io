@@ -1,0 +1,114 @@
+{
+  "ecosystem": {
+    "eyebrow": "Featured ecosystem",
+    "name": "RAI Audit Kit",
+    "description": "A modular audit suite for fairness, robustness, data quality, deep learning, LLM and RAG security, and agent behavior—with evidence reports and CI gates.",
+    "install": "pip install \"rai-audit-kit[all]\"",
+    "tags": ["Responsible AI", "AI security", "Evidence reports", "CI gates"],
+    "links": [
+      { "label": "PyPI", "href": "https://pypi.org/project/rai-audit-kit/" },
+      { "label": "Source", "href": "https://github.com/SaiTeja-Erukude/rai-audit" }
+    ],
+    "packages": [
+      { "name": "rai-audit-kit", "purpose": "Unified installer and CLI", "href": "https://pypi.org/project/rai-audit-kit/" },
+      { "name": "rai-audit-core", "purpose": "Audit engine, evidence, reports, and CI gates", "href": "https://pypi.org/project/rai-audit-core/" },
+      { "name": "rai-audit-ml", "purpose": "Fairness, drift, robustness, and data quality", "href": "https://pypi.org/project/rai-audit-ml/" },
+      { "name": "rai-audit-dl", "purpose": "Image, medical, and scientific AI audits", "href": "https://pypi.org/project/rai-audit-dl/" },
+      { "name": "rai-audit-llm", "purpose": "LLM and RAG safety, grounding, and security", "href": "https://pypi.org/project/rai-audit-llm/" },
+      { "name": "rai-audit-agents", "purpose": "Tool use, memory, permissions, and injection", "href": "https://pypi.org/project/rai-audit-agents/" }
+    ]
+  },
+  "tools": [
+    {
+      "name": "PromptSanitizer",
+      "category": "AI security",
+      "description": "Scans AI inputs and outputs for secrets, PII, prompt injection, risky code, and exfiltration patterns.",
+      "command": "pip install promptsanitizer",
+      "tags": ["Secrets", "PII", "Prompt injection"],
+      "links": [
+        { "label": "PyPI", "href": "https://pypi.org/project/promptsanitizer/" },
+        { "label": "Source", "href": "https://github.com/SaiTeja-Erukude/promptsanitizer" }
+      ]
+    },
+    {
+      "name": "AgentDog",
+      "category": "Agent evaluation",
+      "description": "CI-friendly tests for agent tool use, grounding, safety, data leakage, prompt injection, and efficiency.",
+      "command": "pip install agentdog",
+      "tags": ["Agent evals", "Safety", "Tool use"],
+      "links": [
+        { "label": "PyPI", "href": "https://pypi.org/project/agentdog/" },
+        { "label": "Source", "href": "https://github.com/SaiTeja-Erukude/agentdog" }
+      ]
+    },
+    {
+      "name": "CV Quality",
+      "category": "Data quality",
+      "description": "Audits vision datasets for annotation errors, mislabels, class imbalance, and active-learning priorities.",
+      "command": "pip install cv-quality",
+      "tags": ["Computer vision", "Label quality", "Active learning"],
+      "links": [
+        { "label": "PyPI", "href": "https://pypi.org/project/cv-quality/" },
+        { "label": "Source", "href": "https://github.com/SaiTeja-Erukude/cv-quality" }
+      ]
+    }
+  ],
+  "models": [
+    {
+      "name": "vulnerability-researcher",
+      "description": "Fine-tuned Qwen 3.5 35B model for reviewing vulnerability findings, reducing false positives, and producing structured security triage.",
+      "command": "ollama run erukude/vulnerability-researcher:35b",
+      "tags": ["Vulnerability research", "False positives", "Qwen 3.5 35B"],
+      "href": "https://ollama.com/erukude/vulnerability-researcher"
+    },
+    {
+      "name": "cve-expert",
+      "description": "Fine-tuned DeepSeek-R1 70B model for CVE-worthiness review, exploit-path analysis, and structured vulnerability triage.",
+      "command": "ollama run erukude/cve-expert:70b",
+      "tags": ["CVE triage", "Exploit analysis", "DeepSeek-R1 70B"],
+      "href": "https://ollama.com/erukude/cve-expert"
+    },
+    {
+      "name": "rag-audit-judge",
+      "description": "Fine-tuned local judge for evaluating RAG answer quality, grounding, and retrieval behavior.",
+      "command": "ollama run erukude/rag-audit-judge",
+      "tags": ["RAG", "Evaluation", "Local AI"],
+      "href": "https://ollama.com/erukude/rag-audit-judge"
+    },
+    {
+      "name": "multiagent-orchestrator",
+      "description": "Fine-tuned Llama 3.2 model that routes agents and tools through structured next actions.",
+      "command": "ollama run erukude/multiagent-orchestrator",
+      "tags": ["Agents", "Routing", "Llama 3.2"],
+      "href": "https://ollama.com/erukude/multiagent-orchestrator"
+    },
+    {
+      "name": "assert-ai",
+      "description": "Fine-tuned Llama 3.2 model for producing structured Python unit-test plans.",
+      "command": "ollama run erukude/assert-ai",
+      "tags": ["Testing", "Python", "Developer tools"],
+      "href": "https://ollama.com/erukude/assert-ai"
+    },
+    {
+      "name": "omni-json",
+      "description": "Fine-tuned Llama 3.2 model for deterministic, JSON-only responses in structured AI pipelines.",
+      "command": "ollama run erukude/omni-json",
+      "tags": ["Structured output", "JSON", "Local AI"],
+      "href": "https://ollama.com/erukude/omni-json"
+    }
+  ],
+  "researchModels": [
+    {
+      "name": "galaxy-simplifier",
+      "description": "Generative model for galaxy-image simplification, released with the accompanying astronomy research.",
+      "tags": ["Generative AI", "Astronomy", "Research artifact"],
+      "href": "https://huggingface.co/erukude/galaxy-simplifier"
+    },
+    {
+      "name": "cornvit",
+      "description": "Image-classification model for hierarchical corn-kernel analysis, released with the CornViT research.",
+      "tags": ["Computer vision", "Agriculture", "Research artifact"],
+      "href": "https://huggingface.co/erukude/cornvit"
+    }
+  ]
+}

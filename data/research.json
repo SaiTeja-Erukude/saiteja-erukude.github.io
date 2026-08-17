@@ -1,0 +1,248 @@
+[
+  {
+    "title": "System and Method for Predictive Resource Orchestration in Multi-Modal Video Assessment",
+    "category": "patent",
+    "year": "2026",
+    "venue": "India (IPO)",
+    "number": "Application No. 202641014301",
+    "link": "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/ApplicationStatus",
+    "priorityDate": "Feb 10, 2026",
+    "status": "India (IPO) · Complete Specification",
+    "tags": ["Predictive Orchestration", "Multimodal Video", "Resource Management"],
+    "description": "A computer-implemented video-assessment system that adaptively orchestrates resources and resolves conflicts across multi-modal analysis under constrained conditions such as unstable networks, limited battery life, thermal limits, and real-time behavioral-analysis demands."
+  },
+  {
+    "title": "Amplifying the imaging power of ground-based telescopes with space-based telescopes data and generative AI",
+    "scholarLink": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=j9Iggx8AAAAJ",
+    "category": "journal",
+    "year": "2026",
+    "venue": "Review in progress",
+    "tags": ["Generative AI", "Astronomy", "Galaxy Image Analysis"],
+    "description": "A novel software that enhances ground-telescope imagery by utilizing contextual information from space-based telescopes using a custom-trained generative AI model.",
+    "link": "#",
+    "linkLabel": "Paper",
+    "disabled": true
+  },
+  {
+    "title": "Advanced AI Techniques for Cybersecurity: Concepts, Architectures, And Emerging Trends",
+    "category": "book",
+    "year": "Mar 2026",
+    "venue": "Notion Press",
+    "tags": ["AI-driven Cybersecurity", "Automated Defense"],
+    "description": "Overview of how AI and machine learning are making cybersecurity more proactive, adaptive, and resilient through intelligent threat detection, automated defense, and emerging security innovations.",
+    "links": [
+      { "label": "Amazon", "href": "https://www.amazon.com/dp/B0GVG3BWB8" },
+      { "label": "Notion Press", "href": "https://notionpress.com/in/read/advanced-ai-techniques-for-cybersecurity-concepts-architectures-and-emerging-trends" }
+    ]
+  },
+  {
+    "title": "AI-Driven Cybersecurity Threats: A Survey of Emerging Risks and Defensive Strategies",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:4DMP91E08xMC",
+    "category": "conference",
+    "year": "Jan 2026",
+    "venue": "Springer Nature",
+    "tags": ["Cybersecurity Threats", "AI-Enhanced Scams", "Adversarial AI"],
+    "description": "This work analyzes emerging AI-driven cybersecurity threats and defenses, presenting a taxonomy of risks and highlighting the need for explainable and regulation-aware security solutions.",
+    "link": "https://doi.org/10.1007/978-3-032-10783-1_14",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "CornViT: A Multi-Stage Convolutional Vision Transformer Framework for Hierarchical Corn Kernel Analysis",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:aqlVkmm33-oC",
+    "category": "journal",
+    "year": "Dec 2025",
+    "venue": "Computers, MDPI",
+    "tags": ["Hierarchical Corn Kernel Classification", "Convolutional Vision Transformer", "Computer Vision"],
+    "description": "A multi-stage framework for automated corn kernel quality assessment, achieving up to 94.11% accuracy across purity, shape, and embryo orientation tasks. Deployed as a lightweight web app, offering a practical solution for seed certification.",
+    "link": "https://doi.org/10.3390/computers15010002",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Galaxy Image Simplification Using Generative AI",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:MXK_kJrjxJIC",
+    "category": "journal",
+    "year": "July 2025",
+    "venue": "Astronomy and Computing, 100990",
+    "tags": ["Generative AI", "Astronomy", "Galaxy Image Analysis"],
+    "description": "Modern digital sky surveys acquire images of billions of galaxies requiring effective automation. This paper introduces a novel approach using generative AI to simplify galaxy images.",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2213133725000630",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Multimodal Detection of Fake Reviews using BERT and ResNet-50",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:QIV2ME_5wuYC",
+    "category": "conference",
+    "year": "Sep 2025",
+    "venue": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "tags": ["Fake Review Detection", "Multimodal Learning", "Text-Image Fusion"],
+    "description": "A multimodal fake review detection model using BERT for text and ResNet-50 for images, achieving a 0.934 F1-score. It effectively detects cross-modal inconsistencies, enhancing trust in online reviews.",
+    "link": "https://doi.org/10.1109/ICIMIA67127.2025.11200892",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "FedOnco-Bench: A Reproducible Benchmark for Privacy-Aware Federated Tumor Segmentation with Synthetic CT Data",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:ULOm3_A8WrAC",
+    "category": "conference",
+    "year": "Sep 2025",
+    "venue": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "tags": ["Federated Learning", "Medical Image Segmentation", "Differential Privacy"],
+    "description": "A benchmark for evaluating privacy-aware federated learning on synthetic oncologic CT scans. It highlights the trade-off between privacy and performance across FL methods, offering a standardized platform for medical image segmentation research.",
+    "link": "https://doi.org/10.1109/ICIMIA67127.2025.11200661",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Explainable Deep Learning in Medical Imaging: Brain Tumor and Pneumonia Detection",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:Zph67rFs4hoC",
+    "category": "conference",
+    "year": "Sep 2025",
+    "venue": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "tags": ["Explainable AI", "Grad-CAM", "Medical Imaging"],
+    "description": "An explainable deep learning framework using ResNet50 and DenseNet121 to detect brain tumors and pneumonia from MRI and X-ray images. DenseNet121 achieved higher accuracy and more focused Grad-CAM visualizations, enhancing both performance and interpretability for clinical use.",
+    "link": "https://doi.org/10.1109/ICIMIA67127.2025.11200629",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Wavelet-based GAN Fingerprint Detection using ResNet50",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:YOwf2qJgpHMC",
+    "category": "conference",
+    "year": "Sep 2025",
+    "venue": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "tags": ["Deepfake Detection", "Wavelet-Domain Analysis", "Trustworthy AI Systems"],
+    "description": "A wavelet-based method using DWT and ResNet50 to detect StyleGAN-generated images, achieving up to 95.1% accuracy with Daubechies filters. Results show wavelet-domain artifacts offer strong cues for distinguishing GAN images, outperforming traditional spatial-domain models.",
+    "link": "https://doi.org/10.1109/ICIMIA67127.2025.11200674",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Fourier-Based GAN Fingerprint Detection Using ResNet50",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:3fE2CSJIrl8C",
+    "category": "conference",
+    "year": "Aug 2025",
+    "venue": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "tags": ["Deepfake Detection", "Frequency-Domain Analysis", "Trustworthy AI Systems"],
+    "description": "Combines frequency-domain analysis with deep learning to distinguish StyleGAN-generated images from real ones. By applying a 2D Discrete Fourier Transform and training a ResNet50 model, it reveals spectral fingerprints, achieving 92.8% accuracy and an AUC of 0.95.",
+    "link": "https://doi.org/10.1109/ICISC65841.2025.11187724",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "The Evolution of Search Engines: From Keyword Matching to AI-Powered Understanding",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:5nxA0vEk-isC",
+    "category": "journal",
+    "year": "July 2025",
+    "venue": "International Journal of Computer Applications (0975 - 8887)",
+    "tags": ["AI-Powered Search Engines", "Information Retrieval", "LLMs"],
+    "description": "Search engines have undergone a dramatic transformation from simple keyword-based tools to intelligent, AI-powered systems. This paper explores their evolution, impact and key innovations like LLMs and semantic search.",
+    "link": "https://www.ijcaonline.org/archives/volume187/number18/the-evolution-of-search-engines-from-keyword-matching-to-ai-powered-understandin/",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Multimodal Deep Learning: A Survey of Models, Fusion Strategies, Applications, and Research Challenges",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:0EnyYjriUFMC",
+    "category": "journal",
+    "year": "July 2025",
+    "venue": "International Journal of Computer Applications (0975 - 8887)",
+    "tags": ["Cross-Modal Learning", "Fusion Strategies", "Multimodal Architectures"],
+    "description": "Multimodal DL is enabling models to process and reason across diverse data types like text, images, audio, and video. This survey explores foundational methods, state-of-the-art architectures, and real-world applications.",
+    "link": "https://www.ijcaonline.org/archives/volume187/number19/multimodal-deep-learning-a-survey-of-models-fusion-strategies-applications-and-research-challenges/",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Towards a New Era of Sustainable Agriculture: AI Applications and Case Studies in Crop Management",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:hqOjcs7Dif8C",
+    "category": "journal",
+    "year": "July 2025",
+    "venue": "International Journal of Computer Applications (0975 - 8887)",
+    "tags": ["Precision Agriculture", "Crop Yield Prediction", "Sustainable Farming"],
+    "description": "AI is driving a digital transformation in agriculture, enabling smarter, more sustainable crop management practices. This review highlights key AI applications across yield prediction, precision farming, pest control, and irrigation, supported by real-world case studies and deployment insights.",
+    "link": "https://www.ijcaonline.org/archives/volume187/number18/towards-a-new-era-of-sustainable-agriculture-ai-applications-and-case-studies-in-crop-management/",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Transforming Medicine With Intelligence: How AI Is Reshaping the Role of Doctors and the Future of Clinical Practice",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:UebtZRa9Y70C",
+    "category": "journal",
+    "year": "June 2025",
+    "venue": "Indian Journal of Computer Science and Engineering (IJCSE)",
+    "tags": ["Federated Learning", "Medical Imaging", "Ethical AI in Medicine"],
+    "description": "AI is reshaping clinical practice by enhancing diagnosis, treatment, and care. This review highlights recent advances (2022-2025) and emphasizes human-AI collaboration in healthcare.",
+    "link": "http://doi.org/10.21817/indjcse/2025/v16i1/251603013",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Agentic AI-The Rise of Autonomous Intelligent Agents in the Era of LLMs",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:Se3iqnhoufwC",
+    "category": "journal",
+    "year": "May 2025",
+    "venue": "Indian Journal of Computer Science and Engineering (IJCSE)",
+    "tags": ["Autonomous Agents", "Multi-Components in AI", "Cognitive Functions"],
+    "description": "Agentic AI enables systems to autonomously pursue goals using LLMs for reasoning. This survey covers its foundations, architectures, key frameworks, applications, challenges, and future prospects.",
+    "link": "http://doi.org/10.21817/indjcse/2025/v16i1/251602024",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "The Impact of Artificial Intelligence on Traditional Art Forms: A Disruption or Enhancement?",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:WF5omc3nYNoC",
+    "category": "journal",
+    "year": "June 2025",
+    "venue": "Indian Journal of Computer Science and Engineering (IJCSE)",
+    "tags": ["AI in Traditional Art", "Ethical Concerns", "Socio-Economic Impact"],
+    "description": "AI is reshaping clinical practice by enhancing diagnosis, treatment, and care. This review highlights recent advances (2022-2025) and emphasizes human-AI collaboration in healthcare.",
+    "link": "https://doi.org/10.21817/indjcse/2025/v16i1/251603012",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Data-Centric AI: A Systematic Review of Methods, Challenges, and Future Directions",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:eQOLeE2rZwMC",
+    "category": "journal",
+    "year": "Apr 2025",
+    "venue": "Multidisciplinary International Journal of Research and Development (MIJRD)",
+    "tags": ["Data-Centric AI", "Automation in AI Pipelines"],
+    "description": "As model architecture improvements plateau, data-centric AI (DCAI) shifts focus to enhancing datasets for better performance. This paper reviews recent advances in DCAI methods, applications, challenges, and future directions toward more reliable and fair AI systems.",
+    "link": "https://www.mijrd.com/papers/data-centric-ai-systematic-review-methods-challenges-future-directions",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Explainable Identification of Similarities Between Entities for Discovery in Large Text",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:2osOgNQ5qMEC",
+    "category": "journal",
+    "year": "Mar 2025",
+    "venue": "Future Internet, MDPI",
+    "tags": ["Explainable AI", "Text Analysis & Similarity", "NLP"],
+    "description": "This research addresses limitations in existing AI tools by developing an n-gram analysis framework that provides precise and explainable insights into textual similarities.",
+    "link": "https://doi.org/10.3390/fi17040135",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Identifying Bias in Deep Neural Networks Using Image Transforms",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:d1gkVwhDpl0C",
+    "category": "journal",
+    "year": "Jan 2024",
+    "venue": "Computers, MDPI",
+    "tags": ["Deep Learning", "Bias Detection", "Computer Vision"],
+    "description": "CNNs often work as \"black boxes\" leading to hidden biases. This paper proposes techniques for identifying dataset biases using image transforms including Fourier and wavelet transforms.",
+    "link": "https://doi.org/10.3390/computers13120341",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Identifying bias in CNN image classification using image scrambling and transforms",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:u5HHmVD_uO8C",
+    "category": "thesis",
+    "year": "Oct 2024",
+    "venue": "Master's Thesis, Kansas State University",
+    "tags": ["Deep Learning", "Bias Detection", "Computer Vision"],
+    "description": "CNNs achieve high accuracy in vision tasks but often rely on hidden, biased background features. This thesis proposes two methods to detect and separate contextual information from noise, improving interpretability across various datasets.",
+    "link": "https://doi.org/10.13140/RG.2.2.29582.27209",
+    "linkLabel": "Paper"
+  },
+  {
+    "title": "Analysis of Kansas' Water Quality Data provided by EPA & KDHE",
+    "category": "poster",
+    "year": "April 2024",
+    "venue": "Kansas Data Science Consortium",
+    "authors": "Sai Teja Erukude",
+    "description": "Analyzed EPA and KDHE water-quality records spanning sample characteristics, geographic locations, testing methods, and laboratory results. Statistical modeling found that water-quality levels could significantly predict both sampling location and year.",
+    "image": "images/sai/poster.jpeg",
+    "imageAlt": "Sai Teja Erukude presenting the Kansas water-quality data analysis poster",
+    "link": "https://www.researchgate.net/publication/386381841_Analysis_of_Kansas'_Water_Quality_Data_provided_by_EPA_KDHE",
+    "linkLabel": "Poster"
+  }
+]

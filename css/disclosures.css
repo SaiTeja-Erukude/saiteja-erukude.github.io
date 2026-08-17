@@ -1,0 +1,210 @@
+.disclosures-list {
+    display: grid;
+    gap: 14px;
+}
+
+.disclosure-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    padding: clamp(19px, 2.5vw, 26px);
+    box-shadow: var(--shadow);
+}
+
+.disclosure-card::before {
+    content: '';
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 3px;
+}
+
+.disclosure-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.disclosure-id {
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: .72rem;
+    font-weight: 500;
+    letter-spacing: .08em;
+}
+
+.disclosure-header h2 {
+    max-width: 820px;
+    margin-top: 6px;
+    color: var(--ink);
+    font-size: clamp(1.18rem, 2vw, 1.5rem);
+    font-weight: 600;
+    letter-spacing: -.035em;
+    line-height: 1.2;
+}
+
+.severity {
+    flex: 0 0 auto;
+    border-radius: 999px;
+    padding: 5px 9px;
+    font-family: var(--mono);
+    font-size: .59rem;
+    font-weight: 500;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+.severity-critical {
+    background: #6b1822;
+    color: #fff;
+}
+
+.severity-high {
+    background: #a83228;
+    color: #fff;
+}
+
+.disclosure-description {
+    max-width: 900px;
+    margin-top: 12px;
+    color: var(--text);
+    font-size: .93rem;
+    line-height: 1.62;
+}
+
+.disclosure-facts {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.disclosure-fact {
+    position: relative;
+    min-height: 68px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: var(--raised);
+    padding: 11px 13px 11px 15px;
+}
+
+.disclosure-fact::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    bottom: 12px;
+    left: 0;
+    width: 2px;
+    background: var(--accent);
+}
+
+.disclosure-fact span {
+    display: block;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: .58rem;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.disclosure-fact strong {
+    display: block;
+    margin-top: 4px;
+    color: var(--ink);
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.disclosure-references {
+    display: grid;
+    grid-template-columns: 105px minmax(0, 1fr);
+    gap: 14px;
+    margin-top: 16px;
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+}
+
+.disclosure-references h3 {
+    padding-top: 7px;
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: .59rem;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.reference-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.reference-list a {
+    display: inline-flex;
+    min-height: 32px;
+    max-width: 260px;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink);
+    padding: 6px 10px;
+    font-family: var(--mono);
+    font-size: .6rem;
+    text-decoration: none;
+    transition: border-color .2s, background .2s, color .2s;
+}
+
+.reference-list a:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--accent);
+}
+
+.reference-list span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.reference-list i {
+    flex: 0 0 auto;
+    font-size: .61rem;
+}
+
+@media (max-width: 820px) {
+    .disclosure-facts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 620px) {
+    .disclosure-header {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .disclosure-facts,
+    .disclosure-references {
+        grid-template-columns: 1fr;
+    }
+
+    .disclosure-references {
+        gap: 7px;
+    }
+
+    .disclosure-references h3 {
+        padding-top: 0;
+    }
+
+    .reference-list a {
+        max-width: 100%;
+    }
+}

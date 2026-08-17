@@ -1,0 +1,195 @@
+{
+  "name": "Sai Teja Erukude",
+  "slug": "sai-teja",
+  "role": "Data Scientist | Responsible AI & Security Researcher",
+  "location": "Wichita, Kansas",
+  "status": "Building safe, responsible AI systems and finding vulnerabilities before they become incidents",
+  "photo": {
+    "src": "images/sai/me.jpg",
+    "alt": "Sai Teja Erukude"
+  },
+  "hero": {
+    "meta": "Wichita, Kansas - Responsible AI - AI Security",
+    "command": "Data scientist, AI builder & security researcher",
+    "headline": "Responsible AI, built and tested in the real world.",
+    "summary": "I build production AI systems, release open-source models and evaluation tools, and investigate vulnerabilities in widely used AI/ML software.",
+    "actions": [
+      {
+        "label": "research & publications",
+        "href": "research.html",
+        "icon": "fas fa-arrow-right"
+      },
+      {
+        "label": "security contributions",
+        "href": "disclosures.html",
+        "icon": "fas fa-arrow-right"
+      }
+    ]
+  },
+  "terminalProfile": {
+    "path": "~/sai-teja/profile.json",
+    "prompt": "sai@portfolio ~ $ cat profile.json",
+    "data": {
+      "role": "Data Scientist | Responsible AI & Security Researcher",
+      "years": "7+",
+      "publications": "17+",
+      "peer_reviews": "74+",
+      "citations": "50+",
+      "focus": [
+        "responsible AI",
+        "AI security",
+        "vulnerability research"
+      ],
+      "domains": [
+        "AI evaluation",
+        "secure AI/ML systems",
+        "production AI"
+      ],
+      "location": "Wichita, Kansas"
+    },
+    "status": "building / auditing / securing"
+  },
+  "metrics": [
+    {
+      "value": "8",
+      "label": "CVE IDs"
+    },
+    {
+      "value": "17",
+      "label": "Open-source releases"
+    },
+    {
+      "value": "6",
+      "label": "Fine-tuned Ollama models"
+    },
+    {
+      "value": "17+",
+      "label": "Publications"
+    }
+  ],
+  "details": [
+    {
+      "icon": "fas fa-envelope",
+      "label": "Email",
+      "href": "mailto:erukude.saiteja@gmail.com"
+    },
+    {
+      "icon": "fab fa-linkedin",
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/sai-teja-erukude/"
+    },
+    {
+      "icon": "fas fa-graduation-cap",
+      "label": "Google Scholar",
+      "href": "https://scholar.google.com/citations?user=j9Iggx8AAAAJ&hl=en&oi=ao"
+    },
+    {
+      "icon": "fab fa-orcid",
+      "label": "ORCID",
+      "href": "https://orcid.org/0009-0003-0375-9813"
+    },
+    {
+      "icon": "fa-solid fa-book-open",
+      "label": "Web of Science",
+      "href": "https://www.webofscience.com/wos/author/record/LUY-8596-2024"
+    },
+    {
+      "icon": "fab fa-researchgate",
+      "label": "ResearchGate",
+      "href": "https://www.researchgate.net/profile/Sai-Teja-Erukude"
+    },
+    {
+      "icon": "fab fa-github",
+      "label": "GitHub",
+      "href": "https://github.com/saiteja-erukude"
+    },
+    {
+      "icon": "fab fa-python",
+      "label": "PyPI",
+      "href": "https://pypi.org/user/erukude/"
+    },
+    {
+      "icon": "fas fa-terminal",
+      "label": "Ollama",
+      "href": "https://ollama.com/erukude"
+    },
+    {
+      "icon": "fas fa-cube",
+      "label": "Hugging Face",
+      "href": "https://huggingface.co/erukude"
+    }
+  ],
+  "about": {
+    "counter": "About Sai",
+    "command": "Responsible AI builder & security researcher",
+    "title": "About",
+    "facts": [
+      {
+        "label": "role",
+        "value": "Data Scientist, Koch Ag & Energy Solutions"
+      },
+      {
+        "label": "education",
+        "value": "M.S. Computer Science, Kansas State University"
+      },
+      {
+        "label": "research",
+        "value": "Responsible AI, AI security, explainability, and trustworthy AI/ML systems"
+      },
+      {
+        "label": "security",
+        "value": "9+ vulnerabilities discovered, 7 CVE IDs, and 3 public patched disclosures"
+      },
+      {
+        "label": "open source",
+        "value": "17+ AI tools and models across PyPI, Ollama, and HF"
+      }
+    ],
+    "paragraphs": [
+      "I bridge production AI engineering, responsible AI, and software security. At Koch Ag & Energy Solutions, I lead systems from discovery through deployment, with an emphasis on real-world value, reliability, governance, and security.",
+      "Beyond my industry work, I build open-source audit tools and fine-tuned models, publish research on explainability, model bias, computer vision, and AI security, and coordinate vulnerability disclosures for widely used Python and AI/ML software."
+    ],
+    "loop": [
+      "discover",
+      "design",
+      "build",
+      "deploy",
+      "improve"
+    ]
+  },
+  "adventure": {
+    "eyebrow": "Beyond the work",
+    "title": "Always looking for the next challenge.",
+    "description": "Away from data and research, I enjoy adventure sports—from skydiving and bungee jumping to kayaking and parasailing.",
+    "items": [
+      {
+        "label": "Skydiving",
+        "src": "images/sai/skydive.jpeg",
+        "alt": "Sai Teja skydiving above a rural landscape",
+        "layout": "featured"
+      },
+      {
+        "label": "Bungee jumping",
+        "src": "images/sai/bungee.jpeg",
+        "alt": "Sai Teja bungee jumping over a forested valley",
+        "layout": "wide"
+      },
+      {
+        "label": "Kayaking",
+        "src": "images/sai/kayak.jpeg",
+        "alt": "Sai Teja kayaking on a tree-lined river",
+        "layout": "standard"
+      },
+      {
+        "label": "Parasailing",
+        "src": "images/sai/parasailing.jpeg",
+        "alt": "Sai Teja parasailing beneath a colorful canopy",
+        "layout": "standard"
+      }
+    ]
+  },
+  "connect": {
+    "headline": "Start with an email.",
+    "description": "Email is the most direct way to reach me about research, applied AI, data systems, or professional opportunities."
+  }
+}

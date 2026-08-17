@@ -1,0 +1,302 @@
+/* Home-page composition. Shared color, type, spacing, and controls live in styles.css. */
+.home-intro {
+    display: grid;
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: clamp(26px, 3.5vw, 44px);
+    align-items: start;
+    padding: 30px 0 34px;
+}
+
+.home-photo {
+    width: 170px;
+    height: 208px;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: var(--raised);
+}
+
+.home-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: grayscale(.08);
+}
+
+.home-kicker,
+.home-about-heading > p {
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: .65rem;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.home-intro-copy h1 {
+    margin-top: 8px;
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: clamp(2.15rem, 3.7vw, 3.05rem);
+    font-weight: 600;
+    letter-spacing: -.035em;
+    line-height: 1;
+}
+
+.home-headline {
+    max-width: 660px;
+    margin-top: 14px;
+    color: var(--ink);
+    font-size: clamp(1.35rem, 2.5vw, 2rem);
+    font-weight: 500;
+    letter-spacing: -.035em;
+    line-height: 1.12;
+}
+
+.home-summary {
+    max-width: 680px;
+    margin-top: 13px;
+    color: var(--text);
+    font-size: .98rem;
+    line-height: 1.65;
+}
+
+.home-actions {
+    margin-top: 18px;
+}
+
+.home-about {
+    border-top: 1px solid var(--line);
+    padding: 30px 0;
+}
+
+.home-about {
+    display: grid;
+    grid-template-columns: minmax(220px, .75fr) minmax(0, 1.25fr) minmax(260px, 1fr);
+    gap: clamp(24px, 3.5vw, 44px);
+}
+
+.home-about-heading h2 {
+    margin-top: 9px;
+    color: var(--ink);
+    font-size: clamp(1.55rem, 2.6vw, 2.1rem);
+    font-weight: 600;
+    letter-spacing: -.045em;
+    line-height: 1.08;
+}
+
+.home-about-narrative {
+    color: var(--text);
+    font-size: .94rem;
+    line-height: 1.65;
+}
+
+.home-about-narrative p + p {
+    margin-top: 12px;
+}
+
+.home-facts {
+    border-top: 1px solid var(--line);
+}
+
+.home-facts .fact-row {
+    display: grid;
+    gap: 3px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.home-facts .fact-row span {
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: .59rem;
+    text-transform: uppercase;
+}
+
+.home-facts .fact-row strong {
+    color: var(--ink);
+    font-size: .84rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.home-adventure {
+    border-top: 1px solid var(--line);
+    padding: 32px 0 20px;
+}
+
+.home-adventure-heading {
+    max-width: 920px;
+}
+
+.home-adventure-heading > div > p {
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: .65rem;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.home-adventure-heading h2 {
+    max-width: 560px;
+    margin-top: 9px;
+    color: var(--ink);
+    font-size: clamp(1.55rem, 2.6vw, 2.1rem);
+    font-weight: 600;
+    letter-spacing: -.045em;
+    line-height: 1.08;
+}
+
+.home-adventure-heading > p {
+    margin-top: 12px;
+    color: var(--text);
+    font-size: .94rem;
+    line-height: 1.6;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2, clamp(160px, 16vw, 195px));
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.adventure-photo {
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--raised);
+}
+
+.adventure-photo-featured {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.adventure-photo-wide {
+    grid-column: 3 / 5;
+}
+
+.adventure-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .45s ease;
+}
+
+.adventure-photo-featured img {
+    object-position: center;
+}
+
+.adventure-photo-wide img {
+    object-position: center 45%;
+}
+
+.adventure-photo:nth-child(3) img {
+    object-position: center 56%;
+}
+
+.adventure-photo:nth-child(4) img {
+    object-position: center 62%;
+}
+
+.adventure-photo:hover img {
+    transform: scale(1.025);
+}
+
+.adventure-photo figcaption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: linear-gradient(transparent, rgba(10, 16, 12, .82));
+    color: #fff;
+    padding: 34px 14px 12px;
+}
+
+.adventure-photo figcaption span {
+    color: #9fe5ed;
+    font-family: var(--mono);
+    font-size: .58rem;
+}
+
+.adventure-photo figcaption strong {
+    font-size: .82rem;
+    font-weight: 500;
+}
+
+@media (max-width: 960px) {
+    .home-intro {
+        grid-template-columns: 150px minmax(0, 1fr);
+    }
+
+    .home-photo {
+        width: 150px;
+        height: 184px;
+    }
+
+    .home-about {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    .adventure-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: none;
+        grid-auto-rows: 180px;
+    }
+
+    .adventure-photo-featured,
+    .adventure-photo-wide {
+        grid-column: 1 / -1;
+    }
+
+    .adventure-photo-featured {
+        grid-row: span 2;
+    }
+
+    .adventure-photo-wide {
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .home-intro {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 24px 0 30px;
+    }
+
+    .home-photo {
+        width: 112px;
+        height: 138px;
+    }
+
+    .home-intro-copy h1 {
+        font-size: clamp(2rem, 9vw, 2.6rem);
+    }
+
+    .home-about,
+    .home-adventure {
+        padding: 28px 0;
+    }
+
+    .adventure-grid {
+        grid-auto-rows: 150px;
+        gap: 6px;
+    }
+
+    .adventure-photo figcaption {
+        padding: 28px 11px 10px;
+    }
+}

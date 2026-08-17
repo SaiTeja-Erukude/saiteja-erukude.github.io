@@ -1,0 +1,80 @@
+{
+  "items": [
+    {
+      "role": "Data Scientist",
+      "organization": "Koch Ag & Energy Solutions",
+      "location": "Wichita, KS",
+      "period": "May 2024 - Present",
+      "progression": "Data Scientist Co-op · May–Dec 2024 → Data Scientist · Jan 2025",
+      "summary": "I build and operate production AI and data products at Koch Ag & Energy Solutions. My work spans operational reliability, market intelligence, secure software delivery, and digital transformation.",
+      "outcomes": [
+        "$3M+/yr · Value created & recovered",
+        "7+ · Business-critical initiatives led",
+        "6+ · KAES business units served",
+        "Sole builder · Full SDLC"
+      ],
+      "tags": [],
+      "highlights": [
+        {
+          "title": "Operations & reliability",
+          "description": "Built systems that bring plant-alert context together and automate status reporting, shift handoffs, and inspection review.",
+          "impact": "Plant-alert context and automated handoffs for faster investigations."
+        },
+        {
+          "title": "Market intelligence & platforms",
+          "description": "Own pipeline-event intelligence for time-sensitive decisions and contribute shared developer and analytics-platform capabilities.",
+          "impact": "Pipeline-event intelligence and shared platforms for better continuity."
+        },
+        {
+          "title": "Secure delivery & digital innovation",
+          "description": "Lead AI-assisted code-security scanning and 3D plant-data experiences for secure delivery, remote training, and visualization.",
+          "impact": "AI-assisted code security and 3D plant data for scalable knowledge."
+        }
+      ]
+    },
+    {
+      "role": "Graduate Teaching Assistant",
+      "organization": "Kansas State University",
+      "location": "Manhattan, KS",
+      "period": "Academic Terms, 2023-2024",
+      "summary": "Supported CC 210: Fundamental Computer Programming and CC 710: Computing for Educators, teaching Java and Python to university students and K-12 educators. Developed and migrated course materials to Canvas, led help sessions, and evaluated assignments and exams.",
+      "outcomes": ["120+ learners", "90%+ course success"],
+      "tags": []
+    },
+    {
+      "role": "Graduate Research Assistant",
+      "organization": "Kansas State University",
+      "location": "Manhattan, KS",
+      "period": "May 2023 - Aug 2023",
+      "summary": "Designed a SQL database and migrated university student records. Applied statistical analysis to evaluate rural student performance in computer science and produced visual reports for department decision-making. Built an application that extracts ACM/IEEE curriculum data and generates JSON for a departmental course-mapping tool.",
+      "outcomes": ["10,000+ student records"],
+      "tags": []
+    },
+    {
+      "role": "Software Engineer",
+      "organization": "Tata Consultancy Services",
+      "location": "Hyderabad, India",
+      "period": "Nov 2020 - Dec 2022",
+      "progression": "Assistant Software Engineer → Software Engineer, Digital Cadre · Promoted in 3 months",
+      "summary": "Delivered AEM-based enterprise web features across the full software-development lifecycle. Built personalized-content, secure-document, and web-table-automation components; integrated Okta authentication at enterprise scale; and developed Java Sling models for REST integrations. Resolved critical Java and UI defects while shipping concurrent modules that improved application performance, engagement, and client KPI delivery.",
+      "outcomes": ["500+ authenticated users", "10+ Sling models", "40+ critical defects resolved"],
+      "tags": []
+    },
+    {
+      "role": "Software Engineer Intern",
+      "organization": "TA Digital",
+      "location": "Hyderabad, India",
+      "period": "Feb 2020 - Jul 2020",
+      "summary": "Completed intensive software-development-lifecycle training and built full-stack web applications from the ground up. Applied Java Servlets, SQL, JavaScript, HTML, and CSS to translate requirements into working, end-to-end web experiences.",
+      "tags": []
+    },
+    {
+      "role": "Electronics Engineer Intern",
+      "organization": "XFAB",
+      "location": "Cairo, Egypt",
+      "period": "Jun 2019 - Jul 2019",
+      "summary": "Programmed Arduino microcontrollers in C and helped develop prototypes, including a solar-tracking system designed to maximize photovoltaic power generation. Worked with an international team to gather client requirements, demonstrate solutions, and iterate on product concepts.",
+      "tags": []
+    }
+  ]
+}
