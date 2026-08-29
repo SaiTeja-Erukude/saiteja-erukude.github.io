@@ -1,85 +1,45 @@
 [
   {
-    "cve": "CVE-2026-47117",
-    "title": "OpenMed unauthenticated remote code execution",
-    "severity": "Critical",
-    "cvss": "9.3 (CVSS 4.0) - 9.8 (CVSS 3.1)",
-    "published": "June 2, 2026",
-    "affected": "OpenMed versions before 1.5.2",
-    "affectedMetric": "< 1.5.2",
-    "fixed": "OpenMed 1.5.2",
-    "fixedMetric": "1.5.2",
-    "cwe": "CWE-94 - Code injection",
+    "cve": "CVE-2026-10036",
+    "title": "SpeechBrain arbitrary code execution via CKPT.yaml parsing",
+    "severity": "High",
+    "cvss": "8.7 (CVSS 4.0) - 8.8 (CVSS 3.1)",
+    "published": "August 27, 2026",
+    "affected": "SpeechBrain versions before 1.1.1",
+    "affectedMetric": "< 1.1.1",
+    "fixed": "SpeechBrain 1.1.1",
+    "fixedMetric": "1.1.1",
+    "cwe": "CWE-502 - Deserialization of untrusted data",
     "downloads": {
-      "value": "14.5M",
+      "value": "63M",
       "label": "All-time PyPI downloads",
       "source": "Pepy",
-      "url": "https://pepy.tech/projects/openmed"
+      "url": "https://pepy.tech/projects/speechbrain"
     },
     "facts": [
-      { "label": "Product", "value": "OpenMed (Python - PyPI)" },
-      { "label": "CVSS score", "value": "9.3 (CVSS 4.0) / 9.8 (CVSS 3.1)" },
-      { "label": "Vector", "value": "Network - Unauthenticated - No UI" },
-      { "label": "Affected / Fixed", "value": "OpenMed < 1.5.2 - Fixed in 1.5.2" },
-      { "label": "Weakness", "value": "CWE-94 - Code injection" },
-      { "label": "PyPI downloads", "value": "3.94M / month - 14.5M all-time" }
+      { "label": "Product", "value": "SpeechBrain (Python - PyPI)" },
+      { "label": "CVSS score", "value": "8.7 (CVSS 4.0) / 8.8 (CVSS 3.1)" },
+      { "label": "Vector", "value": "Network - Unauthenticated - User interaction required" },
+      { "label": "Affected / Fixed", "value": "SpeechBrain < 1.1.1 - Fixed in 1.1.1" },
+      { "label": "Weakness", "value": "CWE-502 - Deserialization of untrusted data" },
+      { "label": "PyPI downloads", "value": "2M / month - 63M all-time" }
     ],
-    "description": "A model-loading path could allow an unauthenticated attacker to trigger execution of attacker-controlled Python code in the OpenMed service process.",
-    "cveUrl": "https://www.cve.org/CVERecord?id=CVE-2026-47117",
-    "pocUrl": "https://github.com/SaiTeja-Erukude/CVE-2026-47117-openmed-rce",
+    "description": "Unsafe parsing of checkpoint metadata could allow crafted CKPT.yaml files to execute arbitrary Python code during Checkpointer.recover_if_possible() candidate discovery, even when the malicious checkpoint is not selected for recovery.",
+    "cveUrl": "https://www.cve.org/CVERecord?id=CVE-2026-10036",
+    "pocUrl": "https://github.com/SaiTeja-Erukude/CVE-2026-10036-speechbrain-rce",
     "references": [
-      { "label": "NVD", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-47117" },
-      { "label": "CVE.org record", "url": "https://www.cve.org/CVERecord?id=CVE-2026-47117" },
-      { "label": "VulnCheck advisory", "url": "https://www.vulncheck.com/advisories/openmed-remote-code-execution-via-pii-model-loading" },
-      { "label": "GitHub advisory", "url": "https://github.com/advisories/GHSA-m3v4-v5gx-7wf5" },
-      { "label": "Fix pull request", "url": "https://github.com/maziyarpanahi/openmed/pull/59" },
-      { "label": "Patch commit", "url": "https://github.com/maziyarpanahi/openmed/commit/98724f65df98d7518b9006e6356740aa36c2f224" },
-      { "label": "Release notes v1.5.2", "url": "https://github.com/maziyarpanahi/openmed/releases/tag/v1.5.2" },
-      { "label": "Project repository", "url": "https://github.com/maziyarpanahi/openmed" },
-      { "label": "PyPI package", "url": "https://pypi.org/project/openmed/" },
-      { "label": "Download statistics", "url": "https://pepy.tech/projects/openmed" },
-      { "label": "PoC repository", "url": "https://github.com/SaiTeja-Erukude/CVE-2026-47117-openmed-rce" }
-    ]
-  },
-  {
-    "cve": "CVE-2026-47103",
-    "title": "Python StateMachine remote code execution via SCXML evaluation",
-    "severity": "Critical",
-    "cvss": "9.3 (CVSS 4.0) - 9.8 (CVSS 3.1)",
-    "published": "June 17, 2026",
-    "affected": "Python StateMachine 3.0.0 through 3.1.x",
-    "affectedMetric": "3.0.0-3.1.x",
-    "fixed": "Python StateMachine 3.2.0",
-    "fixedMetric": "3.2.0",
-    "cwe": "CWE-95 - Eval injection",
-    "downloads": {
-      "value": "17.6M",
-      "label": "All-time PyPI downloads",
-      "source": "Pepy",
-      "url": "https://pepy.tech/projects/python-statemachine"
-    },
-    "facts": [
-      { "label": "Product", "value": "Python StateMachine (Python - PyPI)" },
-      { "label": "CVSS score", "value": "9.3 (CVSS 4.0) / 9.8 (CVSS 3.1)" },
-      { "label": "Vector", "value": "Network - Unauthenticated - No UI" },
-      { "label": "Affected / Fixed", "value": "Python StateMachine 3.0.0-3.1.x - Fixed in 3.2.0" },
-      { "label": "Weakness", "value": "CWE-95 - Eval injection" },
-      { "label": "PyPI downloads", "value": "1.37M / month - 17.6M all-time" }
-    ],
-    "description": "Unsafe evaluation of attacker-controlled SCXML expressions could allow arbitrary Python code execution in applications that process untrusted SCXML content.",
-    "cveUrl": "https://www.cve.org/CVERecord?id=CVE-2026-47103",
-    "pocUrl": "https://github.com/SaiTeja-Erukude/CVE-2026-47103-python-statemachine-rce",
-    "references": [
-      { "label": "NVD", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-47103" },
-      { "label": "CVE.org record", "url": "https://www.cve.org/CVERecord?id=CVE-2026-47103" },
-      { "label": "VulnCheck advisory", "url": "https://www.vulncheck.com/advisories/python-statemachine-rce-via-scxml-eval-injection" },
-      { "label": "GitHub advisory", "url": "https://github.com/fgmacedo/python-statemachine/security/advisories/GHSA-v4jc-pm6r-3vj8" },
-      { "label": "GitHub Advisory Database", "url": "https://github.com/advisories/GHSA-v4jc-pm6r-3vj8" },
-      { "label": "Release notes v3.2.0", "url": "https://github.com/fgmacedo/python-statemachine/releases/tag/v3.2.0" },
-      { "label": "Project repository", "url": "https://github.com/fgmacedo/python-statemachine" },
-      { "label": "PyPI package", "url": "https://pypi.org/project/python-statemachine/" },
-      { "label": "Download statistics", "url": "https://pepy.tech/projects/python-statemachine" },
-      { "label": "PoC repository", "url": "https://github.com/SaiTeja-Erukude/CVE-2026-47103-python-statemachine-rce" }
+      { "label": "Technical description", "url": "https://github.com/SaiTeja-Erukude/CVE-2026-10036-speechbrain-rce" },
+      { "label": "CVE.org record", "url": "https://www.cve.org/CVERecord?id=CVE-2026-10036" },
+      { "label": "NVD", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10036" },
+      { "label": "VulnCheck advisory", "url": "https://www.vulncheck.com/advisories/speechbrain-arbitrary-code-execution-via-ckpt-yaml-parsing" },
+      { "label": "OSV record", "url": "https://osv.dev/vulnerability/CVE-2026-10036" },
+      { "label": "CVE List v5 record", "url": "https://github.com/CVEProject/cvelistV5/tree/main/cves/2026/10xxx/CVE-2026-10036.json" },
+      { "label": "Patch commit", "url": "https://github.com/speechbrain/speechbrain/commit/22a616646a493871401461f80b2d5cf564cb2850" },
+      { "label": "Fix pull request", "url": "https://github.com/speechbrain/speechbrain/pull/3067" },
+      { "label": "Release notes v1.1.1", "url": "https://github.com/speechbrain/speechbrain/releases/tag/v1.1.1" },
+      { "label": "PyPI package", "url": "https://pypi.org/project/speechbrain/" },
+      { "label": "Project repository", "url": "https://github.com/speechbrain/speechbrain" },
+      { "label": "Download statistics", "url": "https://pepy.tech/projects/speechbrain" }
     ]
   },
   {
@@ -111,15 +71,98 @@
     "cveUrl": "https://www.cve.org/CVERecord?id=CVE-2026-9147",
     "pocUrl": "https://github.com/SaiTeja-Erukude/CVE-2026-9147-uproot-rce",
     "references": [
-      { "label": "NVD", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9147" },
+      { "label": "Technical description", "url": "https://github.com/SaiTeja-Erukude/CVE-2026-9147-uproot-rce" },
       { "label": "CVE.org record", "url": "https://www.cve.org/CVERecord?id=CVE-2026-9147" },
-      { "label": "VulnCheck advisory", "url": "https://www.vulncheck.com/advisories/uproot-and-before-code-injection-via-tstreamerinfo-metadata" },
+      { "label": "NVD", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9147" },
       { "label": "GitHub advisory", "url": "https://github.com/scikit-hep/uproot5/security/advisories/GHSA-6946-mq52-g438" },
+      { "label": "VulnCheck advisory", "url": "https://www.vulncheck.com/advisories/uproot-and-before-code-injection-via-tstreamerinfo-metadata" },
       { "label": "Patch commit", "url": "https://github.com/scikit-hep/uproot5/commit/c045c2824295d907d2e705f31110c742928e50e7" },
-      { "label": "Project repository", "url": "https://github.com/scikit-hep/uproot5" },
       { "label": "PyPI package", "url": "https://pypi.org/project/uproot/" },
-      { "label": "Download statistics", "url": "https://pepy.tech/projects/uproot" },
-      { "label": "PoC repository", "url": "https://github.com/SaiTeja-Erukude/CVE-2026-9147-uproot-rce" }
+      { "label": "Project repository", "url": "https://github.com/scikit-hep/uproot5" },
+      { "label": "Download statistics", "url": "https://pepy.tech/projects/uproot" }
+    ]
+  },
+  {
+    "cve": "CVE-2026-47103",
+    "title": "Python StateMachine remote code execution via SCXML evaluation",
+    "severity": "Critical",
+    "cvss": "9.3 (CVSS 4.0) - 9.8 (CVSS 3.1)",
+    "published": "June 17, 2026",
+    "affected": "Python StateMachine 3.0.0 through 3.1.x",
+    "affectedMetric": "3.0.0-3.1.x",
+    "fixed": "Python StateMachine 3.2.0",
+    "fixedMetric": "3.2.0",
+    "cwe": "CWE-95 - Eval injection",
+    "downloads": {
+      "value": "17.6M",
+      "label": "All-time PyPI downloads",
+      "source": "Pepy",
+      "url": "https://pepy.tech/projects/python-statemachine"
+    },
+    "facts": [
+      { "label": "Product", "value": "Python StateMachine (Python - PyPI)" },
+      { "label": "CVSS score", "value": "9.3 (CVSS 4.0) / 9.8 (CVSS 3.1)" },
+      { "label": "Vector", "value": "Network - Unauthenticated - No UI" },
+      { "label": "Affected / Fixed", "value": "Python StateMachine 3.0.0-3.1.x - Fixed in 3.2.0" },
+      { "label": "Weakness", "value": "CWE-95 - Eval injection" },
+      { "label": "PyPI downloads", "value": "1.37M / month - 17.6M all-time" }
+    ],
+    "description": "Unsafe evaluation of attacker-controlled SCXML expressions could allow arbitrary Python code execution in applications that process untrusted SCXML content.",
+    "cveUrl": "https://www.cve.org/CVERecord?id=CVE-2026-47103",
+    "pocUrl": "https://github.com/SaiTeja-Erukude/CVE-2026-47103-python-statemachine-rce",
+    "references": [
+      { "label": "Technical description", "url": "https://github.com/SaiTeja-Erukude/CVE-2026-47103-python-statemachine-rce" },
+      { "label": "CVE.org record", "url": "https://www.cve.org/CVERecord?id=CVE-2026-47103" },
+      { "label": "GitHub advisory", "url": "https://github.com/fgmacedo/python-statemachine/security/advisories/GHSA-v4jc-pm6r-3vj8" },
+      { "label": "NVD", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-47103" },
+      { "label": "GitHub Advisory Database", "url": "https://github.com/advisories/GHSA-v4jc-pm6r-3vj8" },
+      { "label": "VulnCheck advisory", "url": "https://www.vulncheck.com/advisories/python-statemachine-rce-via-scxml-eval-injection" },
+      { "label": "Release notes v3.2.0", "url": "https://github.com/fgmacedo/python-statemachine/releases/tag/v3.2.0" },
+      { "label": "PyPI package", "url": "https://pypi.org/project/python-statemachine/" },
+      { "label": "Project repository", "url": "https://github.com/fgmacedo/python-statemachine" },
+      { "label": "Download statistics", "url": "https://pepy.tech/projects/python-statemachine" }
+    ]
+  },
+  {
+    "cve": "CVE-2026-47117",
+    "title": "OpenMed unauthenticated remote code execution",
+    "severity": "Critical",
+    "cvss": "9.3 (CVSS 4.0) - 9.8 (CVSS 3.1)",
+    "published": "June 2, 2026",
+    "affected": "OpenMed versions before 1.5.2",
+    "affectedMetric": "< 1.5.2",
+    "fixed": "OpenMed 1.5.2",
+    "fixedMetric": "1.5.2",
+    "cwe": "CWE-94 - Code injection",
+    "downloads": {
+      "value": "14.5M",
+      "label": "All-time PyPI downloads",
+      "source": "Pepy",
+      "url": "https://pepy.tech/projects/openmed"
+    },
+    "facts": [
+      { "label": "Product", "value": "OpenMed (Python - PyPI)" },
+      { "label": "CVSS score", "value": "9.3 (CVSS 4.0) / 9.8 (CVSS 3.1)" },
+      { "label": "Vector", "value": "Network - Unauthenticated - No UI" },
+      { "label": "Affected / Fixed", "value": "OpenMed < 1.5.2 - Fixed in 1.5.2" },
+      { "label": "Weakness", "value": "CWE-94 - Code injection" },
+      { "label": "PyPI downloads", "value": "3.94M / month - 14.5M all-time" }
+    ],
+    "description": "A model-loading path could allow an unauthenticated attacker to trigger execution of attacker-controlled Python code in the OpenMed service process.",
+    "cveUrl": "https://www.cve.org/CVERecord?id=CVE-2026-47117",
+    "pocUrl": "https://github.com/SaiTeja-Erukude/CVE-2026-47117-openmed-rce",
+    "references": [
+      { "label": "Technical description", "url": "https://github.com/SaiTeja-Erukude/CVE-2026-47117-openmed-rce" },
+      { "label": "CVE.org record", "url": "https://www.cve.org/CVERecord?id=CVE-2026-47117" },
+      { "label": "GitHub advisory", "url": "https://github.com/advisories/GHSA-m3v4-v5gx-7wf5" },
+      { "label": "NVD", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-47117" },
+      { "label": "VulnCheck advisory", "url": "https://www.vulncheck.com/advisories/openmed-remote-code-execution-via-pii-model-loading" },
+      { "label": "Patch commit", "url": "https://github.com/maziyarpanahi/openmed/commit/98724f65df98d7518b9006e6356740aa36c2f224" },
+      { "label": "Fix pull request", "url": "https://github.com/maziyarpanahi/openmed/pull/59" },
+      { "label": "Release notes v1.5.2", "url": "https://github.com/maziyarpanahi/openmed/releases/tag/v1.5.2" },
+      { "label": "PyPI package", "url": "https://pypi.org/project/openmed/" },
+      { "label": "Project repository", "url": "https://github.com/maziyarpanahi/openmed" },
+      { "label": "Download statistics", "url": "https://pepy.tech/projects/openmed" }
     ]
   }
 ]

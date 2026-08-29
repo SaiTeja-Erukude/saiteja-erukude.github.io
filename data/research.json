@@ -12,16 +12,15 @@
     "description": "A computer-implemented video-assessment system that adaptively orchestrates resources and resolves conflicts across multi-modal analysis under constrained conditions such as unstable networks, limited battery life, thermal limits, and real-time behavioral-analysis demands."
   },
   {
-    "title": "Amplifying the imaging power of ground-based telescopes with space-based telescopes data and generative AI",
-    "scholarLink": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=j9Iggx8AAAAJ",
+    "title": "Amplifying the imaging power of digital sky surveys with space telescopes data and generative AI",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&sortby=pubdate&citation_for_view=j9Iggx8AAAAJ:dhFuZR0502QC",
     "category": "journal",
-    "year": "2026",
-    "venue": "Review in progress",
-    "tags": ["Generative AI", "Astronomy", "Galaxy Image Analysis"],
-    "description": "A novel software that enhances ground-telescope imagery by utilizing contextual information from space-based telescopes using a custom-trained generative AI model.",
-    "link": "#",
-    "linkLabel": "Paper",
-    "disabled": true
+    "year": "Aug 2026",
+    "venue": "Monthly Notices of the Royal Astronomical Society, stag1594",
+    "tags": ["Generative AI", "Digital Sky Surveys", "Galaxy Image Enhancement"],
+    "description": "Uses generative AI and space-telescope data to enhance ground-based galaxy images, with released code, training data, and a 63,202-image enhanced galaxy catalog.",
+    "link": "https://doi.org/10.1093/mnras/stag1594",
+    "linkLabel": "Paper"
   },
   {
     "title": "Advanced AI Techniques for Cybersecurity: Concepts, Architectures, And Emerging Trends",

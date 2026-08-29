@@ -44,6 +44,11 @@
             </div>`;
     }
 
+    function getPublishedTime(item) {
+        const time = Date.parse(item.published || "");
+        return Number.isNaN(time) ? 0 : time;
+    }
+
     try {
         const disclosures = await loadJson("data/disclosures.json");
 
@@ -52,7 +57,12 @@
             return;
         }
 
-        root.innerHTML = `<div class="disclosures-list">${disclosures.map((item) => `
+        const sortedDisclosures = disclosures
+            .map((item, index) => ({ item, index }))
+            .sort((a, b) => getPublishedTime(b.item) - getPublishedTime(a.item) || a.index - b.index)
+            .map(({ item }) => item);
+
+        root.innerHTML = `<div class="disclosures-list">${sortedDisclosures.map((item) => `
             <article class="disclosure-card">
                 <div class="disclosure-header">
                     <div><p class="disclosure-id">${escapeHtml(item.cve)}</p><h2>${escapeHtml(item.title)}</h2></div>

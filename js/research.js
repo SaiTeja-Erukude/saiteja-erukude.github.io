@@ -66,7 +66,7 @@
     }
 
     const authorsByTitle = {
-        "Amplifying the imaging power of ground-based telescopes with space-based telescopes data and generative AI": "Sai Teja Erukude, Lior Shamir",
+        "Amplifying the imaging power of digital sky surveys with space telescopes data and generative AI": "Sai Teja Erukude, Lior Shamir",
         "AI-Driven Cybersecurity Threats: A Survey of Emerging Risks and Defensive Strategies": "Sai Teja Erukude, Viswa Chaitanya Marella, Suhasnadh Reddy Veluru",
         "CornViT: A Multi-Stage Convolutional Vision Transformer Framework for Hierarchical Corn Kernel Analysis": "Sai Teja Erukude, Jane Mascarenhas, Lior Shamir",
         "Galaxy Image Simplification Using Generative AI": "Sai Teja Erukude, Lior Shamir",
@@ -88,7 +88,7 @@
     };
 
     const figuresByTitle = {
-        "Amplifying the imaging power of ground-based telescopes with space-based telescopes data and generative AI": "images/research/galxy-amplification.jpg",
+        "Amplifying the imaging power of digital sky surveys with space telescopes data and generative AI": "images/research/galxy-amplification.jpg",
         "AI-Driven Cybersecurity Threats: A Survey of Emerging Risks and Defensive Strategies": "images/research/ai-cybersecurity-deepfake-categories.png",
         "CornViT: A Multi-Stage Convolutional Vision Transformer Framework for Hierarchical Corn Kernel Analysis": "images/research/cornvit-pipeline.png",
         "Galaxy Image Simplification Using Generative AI": "images/research/galaxy-skeletonization.jpg",
