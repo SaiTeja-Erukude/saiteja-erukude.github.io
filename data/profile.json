@@ -11,8 +11,8 @@
   "hero": {
     "meta": "Wichita, Kansas - Responsible AI - AI Security",
     "command": "Data scientist, AI builder & security researcher",
-    "headline": "Responsible AI, built and tested in the real world.",
-    "summary": "I build production AI systems, create practical evaluation tools, and research vulnerabilities in AI and Python software."
+    "headline": "I build, evaluate, and break AI systems.",
+    "summary": "With the goal of making them more useful, trustworthy, and secure."
   },
   "terminalProfile": {
     "path": "~/sai-teja/profile.json",
@@ -121,8 +121,10 @@
       }
     ],
     "paragraphs": [
-      "I lead production AI and data products from discovery through deployment, connecting responsible AI and software security with measurable business outcomes. I build reliability, evaluation, and governance into delivery.",
-      "Beyond industry work, I build open-source tools and fine-tune models, publish research on explainability, model bias, and AI security, and coordinate vulnerability disclosures for widely used Python and AI/ML software."
+      "With 7 years of experience building enterprise data solutions, I work at the intersection of applied AI, responsible AI, and AI security. My work spans AI evaluation, fairness, explainability, and vulnerability research.",
+      "I’m particularly interested in the gap between AI capability and trust: understanding where systems fail, how they can be exploited, and how to detect and mitigate bias. These questions guide my work toward making AI systems more reliable, understandable, and secure.",
+      "My security research has resulted in five published CVEs across widely used open-source projects. Alongside my industry work, I contribute through research publications, scientific peer review, and open-source development.",
+      "I’m passionate about building the technical foundations, tools, and practices that enable organizations to adopt AI responsibly — without treating security, fairness, and explainability as afterthoughts."
     ],
     "loop": [
       "discover",
