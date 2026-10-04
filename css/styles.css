@@ -118,7 +118,7 @@ nav {
     position: relative;
     color: var(--muted);
     font-family: var(--mono);
-    font-size: .73rem;
+    font-size: var(--small-label-size, .73rem);
     font-weight: 500;
     letter-spacing: .04em;
     text-decoration: none;
@@ -175,7 +175,7 @@ footer {
 .work-highlights-eyebrow {
     color: var(--accent);
     font-family: var(--mono);
-    font-size: .65rem;
+    font-size: var(--small-label-size, .65rem);
     font-weight: 500;
     letter-spacing: .08em;
     text-transform: uppercase;
@@ -233,11 +233,10 @@ footer {
     color: var(--muted);
     padding: 4px 8px;
     font-family: var(--mono);
-    font-size: .6rem;
+    font-size: var(--small-label-size, .6rem);
     line-height: 1.35;
 }
 
-.terminal-link,
 .action-button,
 .publication-action,
 .publication-link,
@@ -253,14 +252,13 @@ footer {
     color: var(--accent-ink);
     padding: 8px 13px;
     font-family: var(--mono);
-    font-size: .66rem;
+    font-size: var(--small-label-size, .66rem);
     letter-spacing: .03em;
     text-decoration: none;
     text-transform: uppercase;
     transition: background .2s, border-color .2s, color .2s, transform .2s;
 }
 
-.terminal-link:hover,
 .action-button:hover,
 .publication-action:hover,
 .publication-link:hover,
@@ -272,7 +270,6 @@ footer {
 }
 
 .hero-actions,
-.home-actions,
 .book-links,
 .patent-actions,
 .publication-actions {
@@ -331,7 +328,7 @@ footer {
 .profile-links a {
     color: var(--ink);
     font-family: var(--mono);
-    font-size: .68rem;
+    font-size: var(--small-label-size, .68rem);
     text-decoration: none;
 }
 
@@ -346,7 +343,7 @@ footer {
     color: var(--muted);
     padding: 18px;
     font-family: var(--mono);
-    font-size: .72rem;
+    font-size: var(--small-label-size, .72rem);
     text-align: center;
 }
 
@@ -356,13 +353,24 @@ footer {
     border-top: 1px solid var(--line);
     color: var(--muted);
     font-family: var(--mono);
-    font-size: .6rem;
+    font-size: var(--small-label-size, .6rem);
     letter-spacing: .04em;
     text-align: center;
     text-transform: uppercase;
 }
 
 @media (max-width: 820px) {
+    :root {
+        --small-label-size: .75rem;
+    }
+
+    .action-button,
+    .publication-action,
+    .publication-link,
+    .certificate-link {
+        min-height: 44px;
+    }
+
     nav {
         width: min(100% - 32px, var(--content-width));
         min-height: auto;
@@ -419,12 +427,11 @@ footer {
         padding-top: 18px;
     }
 
-    .terminal-link,
     .action-button,
     .publication-action,
     .publication-link,
     .certificate-link {
-        min-height: 36px;
+        min-height: 44px;
     }
 }
 

@@ -9,7 +9,7 @@
     gap: 7px;
     color: var(--accent);
     font-family: var(--mono);
-    font-size: .62rem;
+    font-size: var(--small-label-size, .62rem);
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
@@ -38,7 +38,7 @@
 .model-card-top span {
     color: var(--accent);
     font-family: var(--mono);
-    font-size: .61rem;
+    font-size: var(--small-label-size, .61rem);
     font-weight: 500;
     letter-spacing: .08em;
     text-transform: uppercase;
@@ -56,7 +56,7 @@
 .project-section-heading > span {
     color: var(--muted);
     font-family: var(--mono);
-    font-size: .62rem;
+    font-size: var(--small-label-size, .62rem);
     text-align: right;
     text-transform: uppercase;
 }
@@ -78,24 +78,91 @@
     line-height: 1.65;
 }
 
+.ecosystem-intro {
+    min-width: 0;
+}
+
 .project-command {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
     margin-top: 16px;
-    overflow-x: auto;
+    min-width: 0;
+    overflow: hidden;
     border: 1px solid var(--line);
     border-radius: 8px;
     background: #17221c;
     color: #e8f2eb;
-    padding: 10px 12px;
+    padding: 0;
     font-family: var(--mono);
-    font-size: .65rem;
+    font-size: var(--small-label-size, .65rem);
     line-height: 1.4;
     white-space: nowrap;
 }
 
-.project-command span {
+.project-command code {
+    flex: 1;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 12px;
+    font: inherit;
+}
+
+.project-command code::-webkit-scrollbar {
+    display: none;
+}
+
+.project-command .command-prompt {
     color: #79d3de;
+}
+
+.copy-command {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    min-width: 44px;
+    min-height: 44px;
+    align-self: stretch;
+    border: 0;
+    border-left: 1px solid rgba(232, 242, 235, .2);
+    background: transparent;
+    color: #e8f2eb;
+    padding: 8px;
+    font: inherit;
+    cursor: pointer;
+}
+
+.copy-command svg {
+    width: 18px;
+    height: 18px;
+}
+
+.copy-command.is-copied {
+    color: #79d3de;
+}
+
+.copy-command:hover {
+    background: rgba(232, 242, 235, .1);
+}
+
+.copy-command:focus-visible {
+    outline: 2px solid #79d3de;
+    outline-offset: -4px;
+}
+
+.copy-command[aria-busy="true"] {
+    cursor: wait;
+}
+
+.command-copy-status {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
 .ecosystem-intro .tag-list,
@@ -141,7 +208,7 @@
     overflow: hidden;
     color: var(--ink);
     font-family: var(--mono);
-    font-size: .69rem;
+    font-size: var(--small-label-size, .69rem);
     font-weight: 500;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -150,14 +217,14 @@
 .package-list small {
     margin-top: 2px;
     color: var(--muted);
-    font-size: .69rem;
+    font-size: var(--small-label-size, .69rem);
     line-height: 1.35;
 }
 
 .package-list > a > i {
     flex: 0 0 auto;
     color: var(--accent);
-    font-size: .61rem;
+    font-size: var(--small-label-size, .61rem);
 }
 
 .project-card-grid {
@@ -233,7 +300,7 @@
 
 @media (max-width: 960px) {
     .ecosystem-card {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .project-card-grid {
@@ -242,6 +309,11 @@
 }
 
 @media (max-width: 720px) {
+    .project-link,
+    .model-link {
+        min-height: 44px;
+    }
+
     .project-section-heading {
         align-items: flex-start;
         flex-direction: column;

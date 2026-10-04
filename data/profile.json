@@ -12,19 +12,7 @@
     "meta": "Wichita, Kansas - Responsible AI - AI Security",
     "command": "Data scientist, AI builder & security researcher",
     "headline": "Responsible AI, built and tested in the real world.",
-    "summary": "I build production AI systems, release open-source models and evaluation tools, and investigate vulnerabilities in widely used AI/ML software.",
-    "actions": [
-      {
-        "label": "research & publications",
-        "href": "research.html",
-        "icon": "fas fa-arrow-right"
-      },
-      {
-        "label": "security contributions",
-        "href": "disclosures.html",
-        "icon": "fas fa-arrow-right"
-      }
-    ]
+    "summary": "I build production AI systems, create practical evaluation tools, and research vulnerabilities in AI and Python software."
   },
   "terminalProfile": {
     "path": "~/sai-teja/profile.json",
@@ -51,20 +39,19 @@
   },
   "metrics": [
     {
-      "value": "8",
-      "label": "CVE IDs"
+      "source": "disclosures",
+      "label": "Published CVEs",
+      "href": "disclosures.html"
     },
     {
-      "value": "17",
-      "label": "Open-source releases"
-    },
-    {
-      "value": "6",
-      "label": "Fine-tuned Ollama models"
+      "source": "projects",
+      "label": "Tools & models",
+      "href": "projects.html"
     },
     {
       "value": "17+",
-      "label": "Publications"
+      "label": "Publications",
+      "href": "research.html"
     }
   ],
   "details": [
@@ -122,32 +109,20 @@
   "about": {
     "counter": "About Sai",
     "command": "Responsible AI builder & security researcher",
-    "title": "About",
+    "title": "Industry & research.",
     "facts": [
       {
-        "label": "role",
+        "label": "current role",
         "value": "Data Scientist, Koch Ag & Energy Solutions"
       },
       {
         "label": "education",
         "value": "M.S. Computer Science, Kansas State University"
-      },
-      {
-        "label": "research",
-        "value": "Responsible AI, AI security, explainability, and trustworthy AI/ML systems"
-      },
-      {
-        "label": "security",
-        "value": "9+ vulnerabilities discovered, 7 CVE IDs, and 4 public patched disclosures"
-      },
-      {
-        "label": "open source",
-        "value": "17+ AI tools and models across PyPI, Ollama, and HF"
       }
     ],
     "paragraphs": [
-      "I bridge production AI engineering, responsible AI, and software security. At Koch Ag & Energy Solutions, I lead systems from discovery through deployment, with an emphasis on real-world value, reliability, governance, and security.",
-      "Beyond my industry work, I build open-source audit tools and fine-tuned models, publish research on explainability, model bias, computer vision, and AI security, and coordinate vulnerability disclosures for widely used Python and AI/ML software."
+      "I lead production AI and data products from discovery through deployment, connecting responsible AI and software security with measurable business outcomes. I build reliability, evaluation, and governance into delivery.",
+      "Beyond industry work, I build open-source tools and fine-tune models, publish research on explainability, model bias, and AI security, and coordinate vulnerability disclosures for widely used Python and AI/ML software."
     ],
     "loop": [
       "discover",
@@ -160,7 +135,7 @@
   "adventure": {
     "eyebrow": "Beyond the work",
     "title": "Always looking for the next challenge.",
-    "description": "Away from data and research, I enjoy adventure sports—from skydiving and bungee jumping to kayaking and parasailing.",
+    "description": "Away from AI and research, I enjoy adventure sports—from skydiving and bungee jumping to kayaking and parasailing.",
     "items": [
       {
         "label": "Skydiving",
