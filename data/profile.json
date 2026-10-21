@@ -20,7 +20,7 @@
     "data": {
       "role": "Data Scientist | Responsible AI & Security Researcher",
       "years": "7+",
-      "publications": "17+",
+      "publications": "20+",
       "peer_reviews": "74+",
       "citations": "50+",
       "focus": [
@@ -49,7 +49,7 @@
       "href": "projects.html"
     },
     {
-      "value": "17+",
+      "value": "20+",
       "label": "Publications",
       "href": "research.html"
     }
@@ -123,7 +123,7 @@
     "paragraphs": [
       "With 7 years of experience building enterprise data solutions, I work at the intersection of applied AI, responsible AI, and AI security. My work spans AI evaluation, fairness, explainability, and vulnerability research.",
       "I’m particularly interested in the gap between AI capability and trust: understanding where systems fail, how they can be exploited, and how to detect and mitigate bias. These questions guide my work toward making AI systems more reliable, understandable, and secure.",
-      "My security research has resulted in five published CVEs across widely used open-source projects. Alongside my industry work, I contribute through research publications, scientific peer review, and open-source development.",
+      "My security research has resulted in six published CVEs across widely used open-source projects. Alongside my industry work, I contribute through research publications, scientific peer review, and open-source development.",
       "I’m passionate about building the technical foundations, tools, and practices that enable organizations to adopt AI responsibly — without treating security, fairness, and explainability as afterthoughts."
     ],
     "loop": [

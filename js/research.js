@@ -66,6 +66,7 @@
     }
 
     const authorsByTitle = {
+        "Hybrid Vulnerability Discovery in the Wild: Automated Screening, Fine-Tuned LLMs, and Four Published CVEs": "Sai Teja Erukude, Lior Shamir",
         "Amplifying the imaging power of digital sky surveys with space telescopes data and generative AI": "Sai Teja Erukude, Lior Shamir",
         "AI-Driven Cybersecurity Threats: A Survey of Emerging Risks and Defensive Strategies": "Sai Teja Erukude, Viswa Chaitanya Marella, Suhasnadh Reddy Veluru",
         "CornViT: A Multi-Stage Convolutional Vision Transformer Framework for Hierarchical Corn Kernel Analysis": "Sai Teja Erukude, Jane Mascarenhas, Lior Shamir",
@@ -88,6 +89,7 @@
     };
 
     const figuresByTitle = {
+        "Hybrid Vulnerability Discovery in the Wild: Automated Screening, Fine-Tuned LLMs, and Four Published CVEs": "images/research/hybrid-vulnerability.png",
         "Amplifying the imaging power of digital sky surveys with space telescopes data and generative AI": "images/research/galxy-amplification.jpg",
         "AI-Driven Cybersecurity Threats: A Survey of Emerging Risks and Defensive Strategies": "images/research/ai-cybersecurity-deepfake-categories.png",
         "CornViT: A Multi-Stage Convolutional Vision Transformer Framework for Hierarchical Corn Kernel Analysis": "images/research/cornvit-pipeline.png",

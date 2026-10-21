@@ -53,11 +53,22 @@
 
     function renderMetrics(disclosures) {
         const cves = [...new Map(disclosures.map((item) => [item.cve, item])).values()];
+        const packages = [...new Map(cves
+            .filter((item) => item.downloads?.url)
+            .map((item) => [item.downloads.url, item.downloads])).values()];
+        const totalDownloads = packages.reduce((total, downloads) => {
+            const match = String(downloads.value).trim().match(/^(\d+(?:\.\d+)?)\s*([KMB])?$/i);
+            if (!match) return total;
+
+            const multiplier = { K: 1e3, M: 1e6, B: 1e9 }[match[2]?.toUpperCase()] || 1;
+            return total + Number(match[1]) * multiplier;
+        }, 0);
         const metrics = [
             { label: "Published CVEs", value: cves.length, kind: "total" },
             { label: "Critical", value: cves.filter((item) => item.severity.toLowerCase() === "critical").length, kind: "critical" },
             { label: "High", value: cves.filter((item) => item.severity.toLowerCase() === "high").length, kind: "high" },
-            { label: "Patched", value: `${cves.filter((item) => typeof item.fixed === "string" && item.fixed.trim()).length}/${cves.length}`, kind: "patched" }
+            { label: "Patched", value: `${cves.filter((item) => typeof item.fixed === "string" && item.fixed.trim()).length}/${cves.length}`, kind: "patched" },
+            { label: "Package downloads", value: `≈${new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 2 }).format(totalDownloads)}`, kind: "downloads" }
         ];
 
         metricsRoot.innerHTML = metrics.map((metric) => `

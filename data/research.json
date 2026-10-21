@@ -12,6 +12,17 @@
     "description": "A computer-implemented video-assessment system that adaptively orchestrates resources and resolves conflicts across multi-modal analysis under constrained conditions such as unstable networks, limited battery life, thermal limits, and real-time behavioral-analysis demands."
   },
   {
+    "title": "Hybrid Vulnerability Discovery in the Wild: Automated Screening, Fine-Tuned LLMs, and Four Published CVEs",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&sortby=pubdate&citation_for_view=j9Iggx8AAAAJ:7PzlFSSx8tAC",
+    "category": "journal",
+    "year": "Oct 2026",
+    "venue": "Electronics, MDPI, 15(20), 4727",
+    "tags": ["Vulnerability Discovery", "Fine-Tuned LLMs", "Coordinated Vulnerability Disclosure"],
+    "description": "Combines automated screening, and fine-tuned LLMs to discover vulnerabilities in open-source software. A study of 400 packages yielded 13 validated critical or high-severity findings, with four CVEs published by September 2026.",
+    "link": "https://doi.org/10.3390/electronics15204727",
+    "linkLabel": "Paper"
+  },
+  {
     "title": "Amplifying the imaging power of digital sky surveys with space telescopes data and generative AI",
     "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&sortby=pubdate&citation_for_view=j9Iggx8AAAAJ:dhFuZR0502QC",
     "category": "journal",
