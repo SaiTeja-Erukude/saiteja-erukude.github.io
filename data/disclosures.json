@@ -53,10 +53,10 @@
     "severity": "High",
     "cvss": "8.8 (CVSS 4.0) - 8.2 (CVSS 3.1)",
     "published": "October 19, 2026",
-    "affected": "MLflow 3.17.1 and earlier when using the FileStore tracking backend",
-    "affectedMetric": "<= 3.17.1 (FileStore)",
-    "fixed": "",
-    "fixedMetric": "Fix proposed",
+    "affected": "MLflow versions before 3.18.0 when using the FileStore tracking backend",
+    "affectedMetric": "< 3.18.0 (FileStore)",
+    "fixed": "MLflow 3.18.0",
+    "fixedMetric": "3.18.0",
     "cwe": "CWE-22 - Path traversal",
     "downloads": {
       "value": "1.2B",
@@ -69,7 +69,7 @@
       { "label": "Product", "value": "MLflow (Python - PyPI)" },
       { "label": "CVSS score", "value": "8.8 (CVSS 4.0) / 8.2 (CVSS 3.1)" },
       { "label": "Vector", "value": "Network - Unauthenticated - No UI" },
-      { "label": "Affected / Fixed", "value": "MLflow <= 3.17.1 (FileStore) - Fix proposed" },
+      { "label": "Affected / Fixed", "value": "MLflow < 3.18.0 (FileStore) - Fixed in 3.18.0" },
       { "label": "Weakness", "value": "CWE-22 - Path traversal" },
       { "label": "PyPI downloads", "value": "20M / month - 1.2B all-time" }
     ],
@@ -77,7 +77,7 @@
     "details": [
       { "label": "Component / Credit", "value": "Tracing API StartTraceV3 / FileStore.start_trace() - Discovered by Sai Teja Erukude, coordinated through VulnCheck." },
       { "label": "Impact", "value": "The POST /api/3.0/mlflow/traces endpoint accepts trace IDs that can traverse outside the intended experiment trace directory. FileStore can then write trace_info.yaml, request_metadata, and tag files containing attacker-controlled metadata at unintended paths. FileStore is the default tracking backend before MLflow 3.7.0 and must be explicitly selected in later versions." },
-      { "label": "Remediation", "value": "No patched release is confirmed as of October 20, 2026. Follow pull request #26842 for the proposed path-validation fix. Restrict access to the tracing API and use a database tracking backend instead of FileStore until a verified fix is available." },
+      { "label": "Remediation", "value": "Pull request #26842 has been merged. The path-validation fix is planned for MLflow 3.18.0. Upgrade to 3.18.0 or later when available. Until then, restrict access to the tracing API and use a database tracking backend instead of FileStore." },
       { "label": "CVSS 4.0 vector", "value": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N", "code": true },
       { "label": "CVSS 3.1 vector", "value": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L", "code": true }
     ],
@@ -89,7 +89,7 @@
       { "label": "NVD", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53995" },
       { "label": "VulnCheck advisory", "url": "https://www.vulncheck.com/advisories/mlflow-path-traversal-via-trace-id-api" },
       { "label": "CVE List v5 record", "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/53xxx/CVE-2026-53995.json" },
-      { "label": "Proposed fix pull request", "url": "https://github.com/mlflow/mlflow/pull/26842" },
+      { "label": "Fix pull request", "url": "https://github.com/mlflow/mlflow/pull/26842" },
       { "label": "PyPI package", "url": "https://pypi.org/project/mlflow/" },
       { "label": "Project repository", "url": "https://github.com/mlflow/mlflow" },
       { "label": "Download statistics", "url": "https://pepy.tech/projects/mlflow" }
@@ -202,7 +202,7 @@
     "cvss": "8.5 (CVSS 4.0) - 7.8 (CVSS 3.1)",
     "published": "July 18, 2026",
     "affected": "uproot 5.7.4 and earlier",
-    "affectedMetric": "<= 5.7.4",
+    "affectedMetric": "< 5.7.5",
     "fixed": "uproot 5.7.5",
     "fixedMetric": "5.7.5",
     "cwe": "CWE-94 - Code injection",
@@ -216,7 +216,7 @@
       { "label": "Product", "value": "uproot (Python - PyPI)" },
       { "label": "CVSS score", "value": "8.5 (CVSS 4.0) / 7.8 (CVSS 3.1)" },
       { "label": "Vector", "value": "Local file - No privileges - User opens crafted file" },
-      { "label": "Affected / Fixed", "value": "uproot <= 5.7.4 - Fixed in 5.7.5" },
+      { "label": "Affected / Fixed", "value": "uproot < 5.7.5 - Fixed in 5.7.5" },
       { "label": "Weakness", "value": "CWE-94 - Code injection" },
       { "label": "PyPI downloads", "value": "1.77M / month - 21.4M all-time" }
     ],
