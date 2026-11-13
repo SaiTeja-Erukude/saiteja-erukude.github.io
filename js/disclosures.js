@@ -28,6 +28,23 @@
             </section>`;
     }
 
+    function renderScores(value) {
+        const scores = [...String(value).matchAll(/(\d+(?:\.\d+)?)\s*\(CVSS\s+(3\.1|4\.0)\)/g)]
+            .map((match) => ({ value: Number(match[1]), version: match[2] }))
+            .filter((score) => score.value >= 0 && score.value <= 10)
+            .sort((a, b) => Number(a.version) - Number(b.version));
+
+        if (!scores.length) return "";
+
+        return `<div class="disclosure-fact disclosure-fact-scores">
+            <dl class="cvss-scores" aria-label="CVSS scores">${scores.map((score) => `
+                <div class="cvss-score">
+                    <dt>CVSS v${escapeHtml(score.version)}</dt>
+                    <dd><strong class="cvss-score-value">${score.value.toFixed(1)}</strong></dd>
+                </div>`).join("")}</dl>
+        </div>`;
+    }
+
     function renderFacts(item) {
         const facts = item.facts && item.facts.length ? item.facts : [
             { label: "CWE", value: item.cwe },
@@ -38,11 +55,18 @@
 
         return `
             <div class="disclosure-facts">
-                ${facts.map((fact) => `
+                ${facts.map((fact) => {
+                    if (fact.label === "CVSS score" || fact.label === "CNA / Score") {
+                        const scores = renderScores(fact.value);
+                        if (scores) return scores;
+                    }
+
+                    return `
                     <div class="disclosure-fact">
                         <span>${escapeHtml(fact.label)}</span>
                         <strong>${escapeHtml(fact.value)}</strong>
-                    </div>`).join("")}
+                    </div>`;
+                }).join("")}
             </div>`;
     }
 
