@@ -2,10 +2,10 @@
   "ecosystem": {
     "eyebrow": "Featured ecosystem",
     "name": "RAI Check Kit",
-    "description": "A modular Responsible AI suite for fairness, drift, data quality, robustness, compliance, vision, LLM and RAG security, and agent trace audits. Exports HTML reports with shared CI risk gates.",
+    "description": "A modular Trustworthy AI suite for fairness, drift, data quality, robustness, compliance, vision, LLM and RAG security, and agent trace audits. Exports HTML reports with shared CI risk gates.",
     "install": "pip install \"rai-check-kit[all]\"",
     "tags": [
-      "Responsible AI",
+      "Trustworthy AI",
       "AI security",
       "Evidence reports",
       "CI gates"

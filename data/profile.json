@@ -1,15 +1,15 @@
 {
   "name": "Sai Teja Erukude",
   "slug": "sai-teja",
-  "role": "Data Scientist | Responsible AI & Security Researcher",
+  "role": "Data Scientist | Trustworthy AI & Security Researcher",
   "location": "Wichita, Kansas",
-  "status": "Building safe, responsible AI systems and finding vulnerabilities before they become incidents",
+  "status": "Building safe, trustworthy AI systems and finding vulnerabilities before they become incidents",
   "photo": {
     "src": "images/sai/me.jpg",
     "alt": "Sai Teja Erukude"
   },
   "hero": {
-    "meta": "Wichita, Kansas - Responsible AI - AI Security",
+    "meta": "Wichita, Kansas - Trustworthy AI - AI Security",
     "command": "Data scientist, AI builder & security researcher",
     "headline": "I build, evaluate, and break AI systems.",
     "summary": "With the goal of making them more useful, trustworthy, and secure."
@@ -18,13 +18,13 @@
     "path": "~/sai-teja/profile.json",
     "prompt": "sai@portfolio ~ $ cat profile.json",
     "data": {
-      "role": "Data Scientist | Responsible AI & Security Researcher",
+      "role": "Data Scientist | Trustworthy AI & Security Researcher",
       "years": "7+",
       "publications": "20+",
       "peer_reviews": "74+",
       "citations": "50+",
       "focus": [
-        "responsible AI",
+        "trustworthy AI",
         "AI security",
         "vulnerability research"
       ],
@@ -108,7 +108,7 @@
   ],
   "about": {
     "counter": "About Sai",
-    "command": "Responsible AI builder & security researcher",
+    "command": "Trustworthy AI builder & security researcher",
     "title": "Industry & research.",
     "facts": [
       {
@@ -121,7 +121,7 @@
       }
     ],
     "paragraphs": [
-      "With 7 years of experience building enterprise data solutions, I work at the intersection of applied AI, responsible AI, and AI security. My work spans AI evaluation, fairness, explainability, and vulnerability research.",
+      "With 7 years of experience building enterprise data solutions, I work at the intersection of applied AI, trustworthy AI, and AI security. My work spans AI evaluation, fairness, explainability, and vulnerability research.",
       "I’m particularly interested in the gap between AI capability and trust: understanding where systems fail, how they can be exploited, and how to detect and mitigate bias. These questions guide my work toward making AI systems more reliable, understandable, and secure.",
       "My security research has resulted in eight published CVEs across widely used open-source projects. Alongside my industry work, I contribute through research publications, scientific peer review, and open-source development.",
       "I’m passionate about building the technical foundations, tools, and practices that enable organizations to adopt AI responsibly — without treating security, fairness, and explainability as afterthoughts."
