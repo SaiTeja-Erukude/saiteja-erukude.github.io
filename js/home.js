@@ -1,6 +1,6 @@
 (async function () {
     const root = document.getElementById("profile-home");
-    const { escapeHtml, loadJson, renderError } = window.portfolio;
+    const { escapeHtml, loadJson, renderError, getResearchCounts } = window.portfolio;
 
     function renderHero(profile) {
         return `
@@ -35,9 +35,10 @@
     }
 
     async function renderAchievements(metrics, container) {
-        const [disclosures, projects] = await Promise.allSettled([
+        const [disclosures, projects, research] = await Promise.allSettled([
             loadJson("data/disclosures.json"),
-            loadJson("data/projects.json")
+            loadJson("data/projects.json"),
+            loadJson("data/research.json")
         ]);
         const values = {};
 
@@ -47,6 +48,9 @@
         if (projects.status === "fulfilled") {
             const data = projects.value;
             values.projects = data.ecosystem.packages.length + data.tools.length + data.models.length + data.researchModels.length;
+        }
+        if (research.status === "fulfilled") {
+            values.research = getResearchCounts(research.value).publications;
         }
 
         const availableMetrics = metrics

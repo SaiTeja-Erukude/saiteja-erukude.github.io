@@ -22,9 +22,25 @@
         container.innerHTML = `<p class="data-error">${escapeHtml(message)}</p>`;
     }
 
+    function getResearchCounts(records) {
+        const count = (category) => records.filter((item) => item.category === category).length;
+        const counts = {
+            journals: count("journal"),
+            conferences: count("conference"),
+            theses: count("thesis"),
+            books: count("book"),
+            patents: count("patent"),
+            posters: count("poster")
+        };
+        counts.papers = counts.journals + counts.conferences + counts.theses;
+        counts.publications = counts.papers + counts.books;
+        return counts;
+    }
+
     window.portfolio = {
         escapeHtml,
         loadJson,
-        renderError
+        renderError,
+        getResearchCounts
     };
 })();

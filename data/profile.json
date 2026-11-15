@@ -20,9 +20,8 @@
     "data": {
       "role": "Data Scientist | Trustworthy AI & Security Researcher",
       "years": "7+",
-      "publications": "20+",
+      "publications": "15",
       "peer_reviews": "74+",
-      "citations": "50+",
       "focus": [
         "trustworthy AI",
         "AI security",
@@ -49,7 +48,7 @@
       "href": "projects.html"
     },
     {
-      "value": "20+",
+      "source": "research",
       "label": "Publications",
       "href": "research.html"
     }

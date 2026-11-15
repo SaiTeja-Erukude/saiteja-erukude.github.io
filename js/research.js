@@ -3,7 +3,7 @@
     const patentsGrid = document.getElementById("patents-grid");
     const papersGrid = document.getElementById("papers-grid");
     const postersGrid = document.getElementById("posters-grid");
-    const { escapeHtml, loadJson, renderError } = window.portfolio;
+    const { escapeHtml, loadJson, renderError, getResearchCounts } = window.portfolio;
 
     function externalAttrs(href) {
         return href && /^https?:\/\//.test(href) ? ' target="_blank" rel="noopener noreferrer"' : "";
@@ -71,18 +71,12 @@
         "AI-Driven Cybersecurity Threats: A Survey of Emerging Risks and Defensive Strategies": "Sai Teja Erukude, Viswa Chaitanya Marella, Suhasnadh Reddy Veluru",
         "CornViT: A Multi-Stage Convolutional Vision Transformer Framework for Hierarchical Corn Kernel Analysis": "Sai Teja Erukude, Jane Mascarenhas, Lior Shamir",
         "Galaxy Image Simplification Using Generative AI": "Sai Teja Erukude, Lior Shamir",
+        "From ARIMA to Attention: Power Load Forecasting Using Temporal Deep Learning": "Suhasnadh Reddy Veluru, Sai Teja Erukude, Viswa Chaitanya Marella",
         "Multimodal Detection of Fake Reviews using BERT and ResNet-50": "Suhasnadh Reddy Veluru, Sai Teja Erukude, Viswa Chaitanya Marella",
         "FedOnco-Bench: A Reproducible Benchmark for Privacy-Aware Federated Tumor Segmentation with Synthetic CT Data": "Viswa Chaitanya Marella, Suhasnadh Reddy Veluru, Sai Teja Erukude",
         "Explainable Deep Learning in Medical Imaging: Brain Tumor and Pneumonia Detection": "Sai Teja Erukude, Viswa Chaitanya Marella, Suhasnadh Reddy Veluru",
         "Wavelet-based GAN Fingerprint Detection using ResNet50": "Sai Teja Erukude, Suhasnadh Reddy Veluru, Viswa Chaitanya Marella",
         "Fourier-Based GAN Fingerprint Detection Using ResNet50": "Sai Teja Erukude, Viswa Chaitanya Marella, Suhasnadh Reddy Veluru",
-        "The Evolution of Search Engines: From Keyword Matching to AI-Powered Understanding": "Suhasnadh Reddy Veluru, Viswa Chaitanya Marella, Sai Teja Erukude",
-        "Multimodal Deep Learning: A Survey of Models, Fusion Strategies, Applications, and Research Challenges": "Sai Teja Erukude, Suhasnadh Reddy Veluru, Viswa Chaitanya Marella",
-        "Towards a New Era of Sustainable Agriculture: AI Applications and Case Studies in Crop Management": "Viswa Chaitanya Marella, Sai Teja Erukude, Suhasnadh Reddy Veluru",
-        "Transforming Medicine With Intelligence: How AI Is Reshaping the Role of Doctors and the Future of Clinical Practice": "Suhasnadh Reddy Veluru, Viswa Chaitanya Marella, Sai Teja Erukude",
-        "Agentic AI-The Rise of Autonomous Intelligent Agents in the Era of LLMs": "Sai Teja Erukude, Suhasnadh Reddy Veluru, Viswa Chaitanya Marella",
-        "The Impact of Artificial Intelligence on Traditional Art Forms: A Disruption or Enhancement?": "Viswa Chaitanya Marella, Sai Teja Erukude, Suhasnadh Reddy Veluru",
-        "Data-Centric AI: A Systematic Review of Methods, Challenges, and Future Directions": "Suhasnadh Reddy Veluru, Sai Teja Erukude, Viswa Chaitanya Marella",
         "Explainable Identification of Similarities Between Entities for Discovery in Large Text": "Akhil Joshi, Sai Teja Erukude, Lior Shamir",
         "Identifying Bias in Deep Neural Networks Using Image Transforms": "Sai Teja Erukude, Akhil Joshi, Lior Shamir",
         "Identifying bias in CNN image classification using image scrambling and transforms": "Sai Teja Erukude"
@@ -99,12 +93,6 @@
         "Explainable Deep Learning in Medical Imaging: Brain Tumor and Pneumonia Detection": "images/research/medical-imaging-brain-tumor.jpg",
         "Wavelet-based GAN Fingerprint Detection using ResNet50": "images/research/wavelet-gan-fingerprints.jpg",
         "Fourier-Based GAN Fingerprint Detection Using ResNet50": "images/research/fourier-gan-methodology.jpg",
-        "The Evolution of Search Engines: From Keyword Matching to AI-Powered Understanding": "images/research/search-engines.png",
-        "Multimodal Deep Learning: A Survey of Models, Fusion Strategies, Applications, and Research Challenges": "images/research/multimodal-architecture.jpg",
-        "Towards a New Era of Sustainable Agriculture: AI Applications and Case Studies in Crop Management": "images/research/sustainable-agriculture.jpg",
-        "Transforming Medicine With Intelligence: How AI Is Reshaping the Role of Doctors and the Future of Clinical Practice": "images/research/ai-medicine.png",
-        "The Impact of Artificial Intelligence on Traditional Art Forms: A Disruption or Enhancement?": "images/research/ai-art.png",
-        "Data-Centric AI: A Systematic Review of Methods, Challenges, and Future Directions": "images/research/datacentric-ai.png",
         "Explainable Identification of Similarities Between Entities for Discovery in Large Text": "images/research/text-similarity.png",
         "Identifying Bias in Deep Neural Networks Using Image Transforms": "images/research/bias-image-transforms-wavelet.png",
         "Identifying bias in CNN image classification using image scrambling and transforms": "images/research/thesis.png"
@@ -158,6 +146,7 @@
 
     try {
         const records = await loadJson("data/research.json");
+        const counts = getResearchCounts(records);
         const books = records.filter((item) => item.category === "book");
         const patents = records.filter((item) => item.category === "patent");
         const papers = records.filter((item) => ["journal", "conference", "thesis"].includes(item.category));
@@ -165,7 +154,7 @@
 
         document.getElementById("books-count").textContent = `${books.length} published`;
         document.getElementById("patents-count").textContent = patents.length ? `${patents.length} on record` : "Patent record";
-        document.getElementById("papers-count").textContent = `${papers.length} papers - journal, conference & thesis`;
+        document.getElementById("papers-count").textContent = `${counts.journals} journal articles · ${counts.conferences} conference papers · ${counts.theses} ${counts.theses === 1 ? "thesis" : "theses"}`;
         document.getElementById("posters-count").textContent = `${posters.length} presented`;
         booksGrid.innerHTML = books.length ? books.map(renderBook).join("") : '<p class="disclosures-empty">Published books will appear here.</p>';
         patentsGrid.innerHTML = patents.length ? patents.map(renderPatent).join("") : '<article class="patent-card patent-placeholder"><div class="patent-body"><p class="publication-type">Patent</p><h3>Patent details coming soon.</h3><p>This space is reserved for the title, filing number, status, and official record.</p></div><aside class="patent-visual"><span>IPO</span><strong>--</strong><small>Patent record</small></aside></article>';

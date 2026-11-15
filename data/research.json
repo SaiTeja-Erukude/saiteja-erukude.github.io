@@ -79,6 +79,17 @@
     "linkLabel": "Paper"
   },
   {
+    "title": "From ARIMA to Attention: Power Load Forecasting Using Temporal Deep Learning",
+    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:9ZlFYXVOiuMC",
+    "category": "conference",
+    "year": "2025",
+    "venue": "IEEE, GIEST 2025",
+    "tags": ["Power Load Forecasting", "Time Series", "Temporal Deep Learning"],
+    "description": "Compares ARIMA, LSTM, BiLSTM, and Transformer models for 24-hour power load forecasting on PJM hourly energy consumption data. The Transformer achieved the best forecasting performance, with a mean absolute percentage error of 3.8%.",
+    "link": "https://doi.org/10.1109/GIEST66547.2025.11387354",
+    "linkLabel": "Paper"
+  },
+  {
     "title": "Multimodal Detection of Fake Reviews using BERT and ResNet-50",
     "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:QIV2ME_5wuYC",
     "category": "conference",
@@ -131,83 +142,6 @@
     "tags": ["Deepfake Detection", "Frequency-Domain Analysis", "Trustworthy AI Systems"],
     "description": "Combines frequency-domain analysis with deep learning to distinguish StyleGAN-generated images from real ones. By applying a 2D Discrete Fourier Transform and training a ResNet50 model, it reveals spectral fingerprints, achieving 92.8% accuracy and an AUC of 0.95.",
     "link": "https://doi.org/10.1109/ICISC65841.2025.11187724",
-    "linkLabel": "Paper"
-  },
-  {
-    "title": "The Evolution of Search Engines: From Keyword Matching to AI-Powered Understanding",
-    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:5nxA0vEk-isC",
-    "category": "journal",
-    "year": "July 2025",
-    "venue": "International Journal of Computer Applications (0975 - 8887)",
-    "tags": ["AI-Powered Search Engines", "Information Retrieval", "LLMs"],
-    "description": "Search engines have undergone a dramatic transformation from simple keyword-based tools to intelligent, AI-powered systems. This paper explores their evolution, impact and key innovations like LLMs and semantic search.",
-    "link": "https://www.ijcaonline.org/archives/volume187/number18/the-evolution-of-search-engines-from-keyword-matching-to-ai-powered-understandin/",
-    "linkLabel": "Paper"
-  },
-  {
-    "title": "Multimodal Deep Learning: A Survey of Models, Fusion Strategies, Applications, and Research Challenges",
-    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:0EnyYjriUFMC",
-    "category": "journal",
-    "year": "July 2025",
-    "venue": "International Journal of Computer Applications (0975 - 8887)",
-    "tags": ["Cross-Modal Learning", "Fusion Strategies", "Multimodal Architectures"],
-    "description": "Multimodal DL is enabling models to process and reason across diverse data types like text, images, audio, and video. This survey explores foundational methods, state-of-the-art architectures, and real-world applications.",
-    "link": "https://www.ijcaonline.org/archives/volume187/number19/multimodal-deep-learning-a-survey-of-models-fusion-strategies-applications-and-research-challenges/",
-    "linkLabel": "Paper"
-  },
-  {
-    "title": "Towards a New Era of Sustainable Agriculture: AI Applications and Case Studies in Crop Management",
-    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:hqOjcs7Dif8C",
-    "category": "journal",
-    "year": "July 2025",
-    "venue": "International Journal of Computer Applications (0975 - 8887)",
-    "tags": ["Precision Agriculture", "Crop Yield Prediction", "Sustainable Farming"],
-    "description": "AI is driving a digital transformation in agriculture, enabling smarter, more sustainable crop management practices. This review highlights key AI applications across yield prediction, precision farming, pest control, and irrigation, supported by real-world case studies and deployment insights.",
-    "link": "https://www.ijcaonline.org/archives/volume187/number18/towards-a-new-era-of-sustainable-agriculture-ai-applications-and-case-studies-in-crop-management/",
-    "linkLabel": "Paper"
-  },
-  {
-    "title": "Transforming Medicine With Intelligence: How AI Is Reshaping the Role of Doctors and the Future of Clinical Practice",
-    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:UebtZRa9Y70C",
-    "category": "journal",
-    "year": "June 2025",
-    "venue": "Indian Journal of Computer Science and Engineering (IJCSE)",
-    "tags": ["Federated Learning", "Medical Imaging", "Ethical AI in Medicine"],
-    "description": "AI is reshaping clinical practice by enhancing diagnosis, treatment, and care. This review highlights recent advances (2022-2025) and emphasizes human-AI collaboration in healthcare.",
-    "link": "http://doi.org/10.21817/indjcse/2025/v16i1/251603013",
-    "linkLabel": "Paper"
-  },
-  {
-    "title": "Agentic AI-The Rise of Autonomous Intelligent Agents in the Era of LLMs",
-    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:Se3iqnhoufwC",
-    "category": "journal",
-    "year": "May 2025",
-    "venue": "Indian Journal of Computer Science and Engineering (IJCSE)",
-    "tags": ["Autonomous Agents", "Multi-Components in AI", "Cognitive Functions"],
-    "description": "Agentic AI enables systems to autonomously pursue goals using LLMs for reasoning. This survey covers its foundations, architectures, key frameworks, applications, challenges, and future prospects.",
-    "link": "http://doi.org/10.21817/indjcse/2025/v16i1/251602024",
-    "linkLabel": "Paper"
-  },
-  {
-    "title": "The Impact of Artificial Intelligence on Traditional Art Forms: A Disruption or Enhancement?",
-    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:WF5omc3nYNoC",
-    "category": "journal",
-    "year": "June 2025",
-    "venue": "Indian Journal of Computer Science and Engineering (IJCSE)",
-    "tags": ["AI in Traditional Art", "Ethical Concerns", "Socio-Economic Impact"],
-    "description": "Examines how generative AI can expand creative expression and preserve cultural heritage across visual arts, performing arts, and crafts. Discusses risks to authenticity, data ethics, and artists' livelihoods, and advocates collaborative, ethically guided use that preserves human agency.",
-    "link": "https://doi.org/10.21817/indjcse/2025/v16i1/251603012",
-    "linkLabel": "Paper"
-  },
-  {
-    "title": "Data-Centric AI: A Systematic Review of Methods, Challenges, and Future Directions",
-    "scholarLink": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=j9Iggx8AAAAJ&citation_for_view=j9Iggx8AAAAJ:eQOLeE2rZwMC",
-    "category": "journal",
-    "year": "Apr 2025",
-    "venue": "Multidisciplinary International Journal of Research and Development (MIJRD)",
-    "tags": ["Data-Centric AI", "Automation in AI Pipelines"],
-    "description": "As model architecture improvements plateau, data-centric AI (DCAI) shifts focus to enhancing datasets for better performance. This paper reviews recent advances in DCAI methods, applications, challenges, and future directions toward more reliable and fair AI systems.",
-    "link": "https://www.mijrd.com/papers/data-centric-ai-systematic-review-methods-challenges-future-directions",
     "linkLabel": "Paper"
   },
   {
